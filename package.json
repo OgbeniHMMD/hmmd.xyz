@@ -1,6 +1,6 @@
 {
   "name": "hmmd.xyz",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "My super Nuxt.js project",
   "author": "Olajide A. Hammed",
   "private": true,
@@ -12,8 +12,8 @@
     "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
   },
   "dependencies": {
-    "nuxt": "^2.0.0",
-    "@nuxtjs/pwa": "^3.0.0-0"
+    "@nuxtjs/pwa": "^3.0.0-0",
+    "nuxt": "^2.0.0"
   },
   "devDependencies": {
     "node-sass": "^4.13.1",
