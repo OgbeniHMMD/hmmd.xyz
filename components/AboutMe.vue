@@ -2,7 +2,7 @@
   <div id="about">
     <div
       class="d-flex justify-content-center align-items-center min-vh-100 border-dark border-bottom text-center m-0 my-auto"
-      style="background-image: url('https://www.transparenttextures.com/patterns/asfalt-dark.png')"
+      style="background-image: url('/patterns/asfalt-dark.png')"
     >
       <div>
         <div class="h1">

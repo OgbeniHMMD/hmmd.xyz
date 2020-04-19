@@ -2,7 +2,7 @@
   <div id="header">
     <div
       class="d-flex justify-content-center align-items-center min-vh-100 border-primary border-bottom text-center p-2 m-0 my-auto"
-      style="background-image: url('https://www.transparenttextures.com/patterns/subtle-grey.png')"
+      style="background-image: url('/patterns/subtle-grey.png')"
     >
       <div class="row">
         <div class="col-12 text-primary">

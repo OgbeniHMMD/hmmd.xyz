@@ -2,7 +2,7 @@
   <div id="social">
     <div
       class="d-flex justify-content-center align-items-center min-vh-100 border-primary border-bottom text-center p-2 m-0 my-auto"
-      style="background-image: url('https://www.transparenttextures.com/patterns/stardust.png')"
+      style="background-image: url('/patterns/stardust.png')"
     >
       <div class="display-1">
         <div>
@@ -22,12 +22,10 @@
             <i class="fa fa-github my-3 mx-4"></i>
           </a>
 
-
-          <a href="#header" >
+          <a href="#header">
             <i class="bounce fa fa-chevron-up my-3 mx-4 mr-md-0"></i>
           </a>
         </div>
-
       </div>
     </div>
   </div>
