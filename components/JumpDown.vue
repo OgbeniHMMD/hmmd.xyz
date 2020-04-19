@@ -1,0 +1,62 @@
+<template>
+  <div>
+    <a :href="'#' + anchor" class="mt-2">
+      <i class="bounce fa fa-chevron-down display-4"></i>
+    </a>
+  </div>
+</template>
+
+
+<script>
+export default {
+  props: ["anchor"]
+};
+</script>
+
+
+<style lang="scss" scoped>
+.bounce {
+  -webkit-animation: bounce 2s;
+  animation: bounce 2s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes bounce {
+  0%,
+  25%,
+  50%,
+  75%,
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+  60% {
+    -webkit-transform: translateY(-12px);
+    transform: translateY(-12px);
+  }
+}
+
+@keyframes bounce {
+  0%,
+  25%,
+  50%,
+  75%,
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+  60% {
+    -webkit-transform: translateY(-12px);
+    transform: translateY(-12px);
+  }
+}
+</style>
