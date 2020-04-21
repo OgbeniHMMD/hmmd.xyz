@@ -60,7 +60,7 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: ["@nuxtjs/pwa"],
+  modules: ["@nuxtjs/axios", "@nuxtjs/pwa"],
   /*
    ** Build configuration
    */
