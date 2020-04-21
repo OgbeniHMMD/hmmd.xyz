@@ -6,23 +6,27 @@
     >
       <div class="display-1">
         <div>
-          <a href="/blog">
+          <a href="/blog" title="Blog">
             <i class="fa fa-newspaper-o my-3 mx-4 ml-md-0"></i>
           </a>
 
-          <a href="#contact">
+          <a href="#contact" title="Email">
             <i class="fa fa-envelope my-3 mx-4"></i>
           </a>
 
-          <a href="//twitter.com/OgbeniHMMD">
+          <a href="//t.me/OgbeniHMMD" title="Telegram">
+            <i class="fa fa-telegram my-3 mx-4"></i>
+          </a>
+
+          <a href="//twitter.com/OgbeniHMMD" title="Twitter">
             <i class="fa fa-twitter my-3 mx-4"></i>
           </a>
 
-          <a href="//github.com/OgbeniHMMD">
+          <a href="//github.com/OgbeniHMMD" title="Github">
             <i class="fa fa-github my-3 mx-4"></i>
           </a>
 
-          <a href="#header">
+          <a href="#header" title="Jump Up">
             <i class="bounce fa fa-chevron-up my-3 mx-4 mr-md-0"></i>
           </a>
         </div>
