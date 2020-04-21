@@ -9,8 +9,7 @@
           <img
             id="photo"
             src="~/assets/img/OgbeniHMMD.jpg"
-            class="rounded-circle border border-primary"
-            width="250"
+            class="img-fluid rounded-circle border border-primary"
             alt="OgbeniHMMD"
           />
           <div class="display-4 mt-3" style=" ">Olajide A. Hammed</div>
