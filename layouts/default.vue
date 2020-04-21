@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div data-spy="scroll" data-target="#scroll-spy">
     <nuxt />
   </div>
 </template>

@@ -1,5 +1,5 @@
 <template>
-  <div class="position-relative">
+  <div id="scroll-spy">
     <the-header />
     <about-me />
     <contact-me />
