@@ -126,7 +126,13 @@ export default {
             "/sendMessage?chat_id=" +
             this.chatId +
             "&text=" +
-            encodeURIComponent(this.textArea) +
+            encodeURIComponent(
+              this.textArea +
+                "\n \n- - - - -\n" +
+                this.name +
+                " | " +
+                this.email
+            ) +
             "&parse_mode=html"
         );
         this.showAlert("success", "Message sent. Thank you!");
@@ -137,8 +143,6 @@ export default {
           "Sorry, an error occured. <b>Your Message was not sent.</b>"
         );
       }
-
-      //https://api.telegram.org/bot1200246144:AAFgPUdih32F60oA-C-Ratzoxdqvm_7R6A8/getUpdates
     }
   }
 };
