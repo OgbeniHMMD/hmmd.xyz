@@ -1,69 +1,67 @@
 <template>
-  <div id="contact">
-    <a name="contact"></a>
-    <div
-      class="d-flex justify-content-center align-items-center min-vh-100 border-dark border-bottom text -center p-2 m-0 my-auto"
-      style="background-image: url('/patterns/white-texture.png')"
-    >
-      <div class="container">
-        <div class="row">
-          <h1 class="col-12 mb-4">Contact Me</h1>
+  <div
+    id="contact"
+    class="d-flex justify-content-center align-items-center min-vh-100 border-dark border-bottom text -center p-2 m-0 my-auto"
+    style="background-image: url('/patterns/white-texture.png')"
+  >
+    <div class="container">
+      <div class="row">
+        <h1 class="col-12 mb-4">Contact Me</h1>
 
-          <div
-            role="alert"
-            v-if="alertType"
-            :class="'alert-' + alertType"
-            class="col-12 alert alert-dismissible fade show text-center"
-          >
-            <span v-html="alertMsg"></span>
-          </div>
-
-          <div class="col-12 col-md-6">
-            <input
-              id="name"
-              required
-              v-model.trim="name"
-              class="form-control form-control-lg border-0 shadow mb-4"
-              placeholder="Name"
-            />
-          </div>
-          <div class="col-12 col-md-6">
-            <input
-              id="email"
-              required
-              type="email"
-              v-model.trim="email"
-              class="form-control form-control-lg border-0 shadow mb-4"
-              placeholder="E-mail@Example.com"
-            />
-          </div>
-          <div class="col-12">
-            <textarea
-              rows="4"
-              required
-              v-model.trim="textArea"
-              placeholder="Your Message..."
-              class="form-control form-control-lg border-0 shadow mb-4"
-            ></textarea>
-          </div>
+        <div
+          role="alert"
+          v-if="alertType"
+          :class="'alert-' + alertType"
+          class="col-12 alert fade show text-center"
+        >
+          <span v-html="alertMsg"></span>
         </div>
 
-        <div class="row">
-          <button
-            type="reset"
-            class="btn btn-lg btn-outline-danger col shadow mr-4"
-            v-on:click="reset()"
-          >
-            <i class="fa fa-times mr-4" />Reset
-          </button>
+        <div class="col-12 col-md-6">
+          <input
+            id="name"
+            required
+            v-model.trim="name"
+            class="form-control form-control-lg border-0 shadow mb-4"
+            placeholder="Name"
+          />
+        </div>
+        <div class="col-12 col-md-6">
+          <input
+            id="email"
+            required
+            type="email"
+            v-model.trim="email"
+            class="form-control form-control-lg border-0 shadow mb-4"
+            placeholder="E-mail@Example.com"
+          />
+        </div>
+        <div class="col-12">
+          <textarea
+            rows="4"
+            required
+            v-model.trim="textArea"
+            placeholder="Your Message..."
+            class="form-control form-control-lg border-0 shadow mb-4"
+          ></textarea>
+        </div>
+      </div>
 
-          <button class="btn btn-lg btn-outline-primary col shadow" v-on:click="validateData()">
-            <i class="fa fa-envelope-o mr-4"></i>Send
-          </button>
+      <div class="row">
+        <button
+          type="reset"
+          class="btn btn-lg btn-outline-danger col shadow mr-4"
+          v-on:click="reset()"
+        >
+          <i class="fa fa-times mr-4" />Reset
+        </button>
 
-          <div class="col-2 text-center">
-            <jump-down anchor="social" />
-          </div>
+        <button class="btn btn-lg btn-outline-primary col shadow" v-on:click="validateData()">
+          <i class="fa fa-envelope-o mr-4"></i>Send
+        </button>
+
+        <div class="col-2 text-center">
+          <jump-down anchor="social" />
         </div>
       </div>
     </div>
@@ -78,6 +76,7 @@ export default {
   components: {
     JumpDown
   },
+
   data: function() {
     return {
       alertType: null,
@@ -95,17 +94,19 @@ export default {
 
   methods: {
     reset() {
-      this.alerType = "";
+      this.alerType = null;
       this.alertMsg = "";
 
       this.name = "";
       this.email = "";
       this.textArea = "";
     },
+
     showAlert(type, msg) {
       this.alertType = type;
       this.alertMsg = msg;
     },
+
     validateData() {
       if (this.name === "") {
         this.showAlert("warning", "Please enter a name");

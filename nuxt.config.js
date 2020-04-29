@@ -32,13 +32,8 @@ export default {
       }
     ],
     script: [
-      {
-        src: "https://code.jquery.com/jquery-3.4.1.slim.min.js"
-      },
-      {
-        src:
-          "https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"
-      }
+      // { src: "https://code.jquery.com/jquery-3.4.1.slim.min.js" },
+      // { src: "https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" }
     ]
   },
   /*
