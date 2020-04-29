@@ -1,22 +1,36 @@
 <template>
   <div id="about">
     <div
-      class="d-flex justify-content-center align-items-center min-vh-100 border-dark border-bottom text-center m-0 my-auto"
+      class="d-flex justify-content-center align-items-center min-vh-100 border-dark border-bottom m-0 my-auto"
       style="background-image: url('/patterns/asfalt-dark.png')"
     >
-      <div>
-        <div class="h1">
+      <div class="d-flex flex-column justify-content-around p-3 px-md-5 vh-100">
+        <div class="display-2">
           <i class="fa fa-info-circle"></i>
         </div>
-        <div class="h1">About Me</div>
-        <p class="lead">Bla Bla Bla..</p>
+        <div>
+          <p class="h2 mb-4">Hello! I'm a web developer from Lagos, Nigeria.</p>
+          <p class="h2 mb-4">
+            I make web applications, usually with the
+            <abbr
+              title="Javascript, API and Markup"
+            >JAMstack</abbr>.
+          </p>
+          <p class="h2 mb-4">
+            If you are a business seeking a web presence, or you're an employer looking to hire, you can
+            <a
+              href="#contact"
+            >contact me</a>.
+          </p>
+        </div>
 
-        <jump-down anchor="contact" />
+        <div class="text-center">
+          <jump-down anchor="contact" />
+        </div>
       </div>
     </div>
   </div>
 </template>
-
 
 <script>
 import JumpDown from "~/components/JumpDown.vue";
