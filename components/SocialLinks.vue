@@ -6,7 +6,7 @@
   >
     <div class="display-1">
       <div>
-        <a href="//blog.hmmd.xyz" title="Blog">
+        <a href="/blog" title="Blog">
           <i class="fa fa-newspaper-o my-3 mx-4 ml-md-0"></i>
         </a>
 
