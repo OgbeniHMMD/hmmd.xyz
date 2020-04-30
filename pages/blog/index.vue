@@ -1,5 +1,5 @@
 <template>
-  <div class="container py-4">
+  <div class="container p-2">
     <div v-if="!posts" class="text-center">
       <i class="fa fa-spinner h1 text-primary m-5"></i>
     </div>

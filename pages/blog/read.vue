@@ -1,11 +1,11 @@
 <template>
-  <div class="container py-4">
+  <div class="container p-2">
     <div v-if="!article" class="text-center">
       <i class="fa fa-spinner h1 text-primary m-5"></i>
     </div>
 
     <template v-if="!loading">
-      <header class="border-bottom py-2 mb-5">
+      <header class="border-bottom py-2">
         <h1 class="mt-0">{{article.title}}</h1>
         <div class="text-muted mt-auto">
           <span>
@@ -23,7 +23,7 @@
         </div>
       </header>
 
-      <article v-html="article.content" class="lead"></article>
+      <article v-html="article.content" class="mt-5 lead"></article>
     </template>
   </div>
 </template>
