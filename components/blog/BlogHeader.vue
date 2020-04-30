@@ -2,7 +2,7 @@
   <div class="border-bottom shadow-sm">
     <div class="container p-3 p-md-4 d-flex justify-content-between align-items-center">
       <div>
-        <a href="/">
+        <a href="/blog">
           <img class="border-circle" src="/icon.png" width="60" />
         </a>
       </div>

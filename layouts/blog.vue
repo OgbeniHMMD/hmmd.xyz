@@ -1,5 +1,5 @@
 <template>
-  <div id="blog" class="min-vh-100">
+  <div id="blog">
     <blog-header />
     <nuxt />
     <blog-footer />
@@ -17,9 +17,3 @@ export default {
   }
 };
 </script>
-
-<style lang="scss" scoped>
-#blog {
-  background-image: url("/patterns/stardust.png");
-}
-</style>

@@ -5,7 +5,7 @@
     </div>
 
     <template v-if="!loading">
-      <header class="border-bottom mb-5">
+      <header class="border-bottom py-2 mb-5">
         <h1 class="mt-0">{{article.title}}</h1>
         <div class="text-muted mt-auto">
           <span>
@@ -17,7 +17,7 @@
             {{article.author.displayName}}
           </span>
           <span v-if="article.labels">
-            <i class="fa fa-tags m-2"></i>
+            <i class="fa fa-tag m-2"></i>
             <template v-for="label in article.labels">{{" #" + label}}</template>
           </span>
         </div>

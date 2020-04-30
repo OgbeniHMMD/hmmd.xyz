@@ -22,9 +22,9 @@
             .toDateString()
             }}
           </span>
-          <span>
-            <i class="fa fa-user-o mx-2"></i>
-            {{article.author.displayName}}
+          <span v-if="article.labels">
+            <i class="fa fa-tag mx-2"></i>
+            <template v-for="label in article.labels">{{" #" + label}}</template>
           </span>
         </div>
       </article>
