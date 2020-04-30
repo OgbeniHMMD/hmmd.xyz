@@ -4,8 +4,8 @@
       <i class="fa fa-spinner h1 text-primary m-5"></i>
     </div>
 
-      <template v-if="!loading">
-        <header class=" border-bottom mb-5">
+    <template v-if="!loading">
+      <header class="border-bottom mb-5">
         <h1 class="mt-0">{{article.title}}</h1>
         <div class="text-muted mt-auto">
           <span>
@@ -21,13 +21,12 @@
             <template v-for="label in article.labels">{{" #" + label}}</template>
           </span>
         </div>
-        </header>
+      </header>
 
-        <article v-html="article.content" class="lead"></article>
-      </template>
-    </div>
+      <article v-html="article.content" class="lead"></article>
+    </template>
+  </div>
 </template>
-
 
 
 <script>
@@ -35,7 +34,7 @@ import axios from "axios";
 import bloggerJSON from "~/assets/json/blogger.json";
 
 export default {
-    layout: 'blog',
+  layout: "blog",
   data: function() {
     return {
       loading: true,

@@ -5,24 +5,28 @@
     </div>
 
     <div>
-      <article class="position-relative border-bottom border-primary text-center py-5" v-for="article in posts.items" :key="article.id">
-            <a :href="'/blog/read/?id=' + article.id" class="stretched-link">
-              <h1 class="mt-0 mb-2">{{article.title}}</h1>
-            </a>
+      <article
+        class="position-relative border-bottom border-primary text-center py-5"
+        v-for="article in posts.items"
+        :key="article.id"
+      >
+        <a :href="'/blog/read/?id=' + article.id" class="stretched-link">
+          <h1 class="mt-0 mb-2">{{article.title}}</h1>
+        </a>
 
-            <div class="text-muted text-small">
-              <i class="fa fa-clock-o mr-2"></i>
-              <span>
-                {{
-                new Date(article.published)
-                .toDateString()
-                }}
-              </span>
+        <div class="text-muted text-small">
+          <i class="fa fa-clock-o mr-2"></i>
           <span>
-              <i class="fa fa-user-o mx-2"></i>
-              {{article.author.displayName}}
+            {{
+            new Date(article.published)
+            .toDateString()
+            }}
           </span>
-          </div>
+          <span>
+            <i class="fa fa-user-o mx-2"></i>
+            {{article.author.displayName}}
+          </span>
+        </div>
       </article>
     </div>
   </div>
@@ -33,7 +37,7 @@ import axios from "axios";
 import bloggerJSON from "~/assets/json/blogger.json";
 
 export default {
-    layout: 'blog',
+  layout: "blog",
   data: function() {
     return {
       posts: "",

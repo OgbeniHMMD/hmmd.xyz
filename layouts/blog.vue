@@ -1,7 +1,7 @@
 <template>
   <div id="blog" class="min-vh-100">
     <blog-header />
-     <nuxt />
+    <nuxt />
     <blog-footer />
   </div>
 </template>
