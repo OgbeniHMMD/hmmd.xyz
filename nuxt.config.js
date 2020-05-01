@@ -55,7 +55,16 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: ["@nuxtjs/axios", "@nuxtjs/pwa"],
+  modules: [
+    "@nuxtjs/axios",
+    "@nuxtjs/pwa",
+    [
+      "@nuxtjs/google-adsense",
+      {
+        id: "ca-pub-1901202656329152"
+      }
+    ]
+  ],
   /*
    ** Build configuration
    */
