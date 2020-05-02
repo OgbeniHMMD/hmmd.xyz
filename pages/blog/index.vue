@@ -58,8 +58,7 @@ export default {
       );
       this.posts = response.data;
     } catch (e) {
-      console.log("Error: " + e);
-      $nuxt.error({ statusCode: 500 });
+      $nuxt.error({ message: e.message });
     }
   }
 };

@@ -52,20 +52,18 @@ export default {
   },
   head() {
     return {
-      title: this.article.title + " - OgbeniHMMD"
+      title: this.article.title + " - OgbeniHMMD's Blog"
     };
   },
   async created() {
     try {
+      this.spinner = false;
       const response = await axios.get(
         `https://www.googleapis.com/blogger/v3/blogs/${this.bloggerJSON.id}/posts/${this.$route.query.id}?key=${this.bloggerJSON.key}`
       );
-
-      this.spinner = false;
       this.article = response.data;
     } catch (e) {
-      console.log("Error: " + e);
-      $nuxt.error({ statusCode: 500 });
+      $nuxt.error({ message: e.message });
     }
   }
 };
