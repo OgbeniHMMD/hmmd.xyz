@@ -64,9 +64,3 @@ export default {
   }
 };
 </script>
-
-<style lang="scss" scoped>
-#blog {
-  background-image: url("/patterns/stardust.png");
-}
-</style>

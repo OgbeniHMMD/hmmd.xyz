@@ -4,7 +4,7 @@
       <i class="fa fa-spinner fa-spin h1 text-primary m-5"></i>
     </div>
 
-    <template v-if="!spinner">
+    <div v-if="!spinner">
       <header class="border-bottom py-2">
         <h1 class="mt-0">{{article.title}}</h1>
         <div class="text-muted mt-auto">
@@ -24,7 +24,15 @@
       </header>
 
       <article v-html="article.content" class="mt-5 lead"></article>
-    </template>
+
+      <div class="mt-4">
+        <vue-disqus
+          shortname="hmmd"
+          :identifier="$route.query.id"
+          :url="`https://hmmd.xyz${$nuxt.$route.fullPath}`"
+        ></vue-disqus>
+      </div>
+    </div>
   </div>
 </template>
 

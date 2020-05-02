@@ -47,7 +47,7 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [],
+  plugins: [{ src: "~/plugins/disqus", mode: "client" }],
   /*
    ** Nuxt.js dev-modules
    */
