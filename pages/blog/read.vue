@@ -1,10 +1,10 @@
 <template>
   <div class="container p-2">
     <div v-if="!article" class="text-center">
-      <i class="fa fa-spinner h1 text-primary m-5"></i>
+      <i class="fa fa-spinner fa-spin h1 text-primary m-5"></i>
     </div>
 
-    <template v-if="!loading">
+    <template v-if="article">
       <header class="border-bottom py-2">
         <h1 class="mt-0">{{article.title}}</h1>
         <div class="text-muted mt-auto">

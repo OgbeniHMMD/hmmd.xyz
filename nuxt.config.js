@@ -23,17 +23,17 @@ export default {
       },
       {
         rel: "stylesheet",
+        crossorigin: "anonymous",
+        integrity:
+          "sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN",
         href:
           "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
       },
+
       {
         rel: "stylesheet",
         href: "https://fonts.googleapis.com/css?family=Changa&display=swap"
       }
-    ],
-    script: [
-      // { src: "https://code.jquery.com/jquery-3.4.1.slim.min.js" },
-      // { src: "https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" }
     ]
   },
   /*
@@ -78,4 +78,3 @@ export default {
     fallback: true // If you want to use '404.html' instead of the default '200.html'
   }
 };
-// If you want to use '404.html' instead of the default '200.html'
