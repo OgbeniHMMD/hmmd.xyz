@@ -1,14 +1,14 @@
 <template>
   <div class="container p-2">
-    <div v-if="!posts" class="text-center">
+    <div v-if="spinner" class="text-center">
       <i class="fa fa-spinner fa-spin h1 text-primary m-5"></i>
     </div>
 
-    <div>
+    <div v-if="!spinner">
       <article
+        :key="article.id"
         class="position-relative border-bottom border-primary text-center py-5"
         v-for="article in posts.items"
-        :key="article.id"
       >
         <a :href="'/blog/read/?id=' + article.id" class="stretched-link">
           <h1 class="mt-0 mb-2">{{article.title}}</h1>
@@ -42,33 +42,25 @@ export default {
     return {
       posts: "",
       bloggerJSON,
-      loading: true
+      spinner: true
     };
   },
-  methods: {
-    async fetchPosts() {
-      axios
-        .get(
-          "https://www.googleapis.com/blogger/v3/blogs/" +
-            this.bloggerJSON.id +
-            "/posts" +
-            "?key=" +
-            this.bloggerJSON.key +
-            "&fetchBodies=false&maxResult=" +
-            this.bloggerJSON.maxNews
-          //REF: https://alligator.io/vuejs/rest-api-axios/
-        )
-        .then(response => {
-          // JSON responses are automatically parsed.
-          this.posts = response.data;
-        })
-        .catch(e => {
-          this.errors.push(e);
-        });
-    }
+  head() {
+    return {
+      title: "OgbeniHMMD's Blog"
+    };
   },
-  created() {
-    this.fetchPosts();
+  async created() {
+    try {
+      this.spinner = false;
+      const response = await axios.get(
+        `https://www.googleapis.com/blogger/v3/blogs/${this.bloggerJSON.id}/posts?key=${this.bloggerJSON.key}&fetchBodies=false&maxResult=${this.bloggerJSON.maxNews}`
+      );
+      this.posts = response.data;
+    } catch (e) {
+      console.log("Error: " + e);
+      $nuxt.error({ statusCode: 500 });
+    }
   }
 };
 </script>

@@ -1,10 +1,10 @@
 <template>
   <div class="container p-2">
-    <div v-if="!article" class="text-center">
+    <div v-if="spinner" class="text-center">
       <i class="fa fa-spinner fa-spin h1 text-primary m-5"></i>
     </div>
 
-    <template v-if="article">
+    <template v-if="!spinner">
       <header class="border-bottom py-2">
         <h1 class="mt-0">{{article.title}}</h1>
         <div class="text-muted mt-auto">
@@ -37,41 +37,28 @@ export default {
   layout: "blog",
   data: function() {
     return {
-      loading: true,
+      spinner: true,
       article: "",
       bloggerJSON
     };
   },
-  methods: {
-    async fetchArticle() {
-      axios
-        .get(
-          "https://www.googleapis.com/blogger/v3/blogs/" +
-            this.bloggerJSON.id +
-            "/posts/" +
-            this.$route.query.id +
-            "?key=" +
-            this.bloggerJSON.key
-        )
-        .then(response => {
-          // JSON responses are automatically parsed.
-          this.article = response.data;
-          this.loading = false;
-        })
-        .catch(e => {
-          console.log(e);
-          this.loading = false;
-          $nuxt.error({ statusCode: 404 });
-        });
-    }
-  },
   head() {
     return {
-      title: this.article.title + " - Lagos State Polytechnic"
+      title: this.article.title + " - OgbeniHMMD"
     };
   },
-  created() {
-    this.fetchArticle();
+  async created() {
+    try {
+      const response = await axios.get(
+        `https://www.googleapis.com/blogger/v3/blogs/${this.bloggerJSON.id}/posts/${this.$route.query.id}?key=${this.bloggerJSON.key}`
+      );
+
+      this.spinner = false;
+      this.article = response.data;
+    } catch (e) {
+      console.log("Error: " + e);
+      $nuxt.error({ statusCode: 500 });
+    }
   }
 };
 </script>
