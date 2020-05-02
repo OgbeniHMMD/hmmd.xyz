@@ -14,7 +14,7 @@
           </span>
           <span>
             <i class="fa fa-user m-2"></i>
-            {{article.author.displayName}}
+            <a href="/">{{article.author.displayName}}</a>
           </span>
           <span v-if="article.labels">
             <i class="fa fa-tag m-2"></i>
@@ -23,7 +23,7 @@
         </div>
       </header>
 
-      <article v-html="article.content" class="mt-5 lead"></article>
+      <div v-html="article.content" class="mt-5 lead"></div>
 
       <div class="mt-4">
         <vue-disqus
@@ -55,16 +55,18 @@ export default {
       title: this.article.title + " - OgbeniHMMD's Blog"
     };
   },
-  async created() {
-    try {
-      this.spinner = false;
-      const response = await axios.get(
+  created() {
+    axios
+      .get(
         `https://www.googleapis.com/blogger/v3/blogs/${this.bloggerJSON.id}/posts/${this.$route.query.id}?key=${this.bloggerJSON.key}`
-      );
-      this.article = response.data;
-    } catch (e) {
-      $nuxt.error({ message: e.message });
-    }
+      )
+      .then(response => {
+        this.spinner = false;
+        this.article = response.data;
+      })
+      .catch(e => {
+        $nuxt.error({ message: e.message });
+      });
   }
 };
 </script>

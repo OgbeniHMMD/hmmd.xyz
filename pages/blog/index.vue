@@ -50,16 +50,18 @@ export default {
       title: "OgbeniHMMD's Blog"
     };
   },
-  async created() {
-    try {
-      this.spinner = false;
-      const response = await axios.get(
+  created() {
+    axios
+      .get(
         `https://www.googleapis.com/blogger/v3/blogs/${this.bloggerJSON.id}/posts?key=${this.bloggerJSON.key}&fetchBodies=false&maxResult=${this.bloggerJSON.maxNews}`
-      );
-      this.posts = response.data;
-    } catch (e) {
-      $nuxt.error({ message: e.message });
-    }
+      )
+      .then(response => {
+        this.spinner = false;
+        this.article = response.data;
+      })
+      .catch(e => {
+        $nuxt.error({ message: e.message });
+      });
   }
 };
 </script>
