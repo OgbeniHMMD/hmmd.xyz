@@ -67,7 +67,7 @@
 
         <div class="col-2 text-center">
           <a href="#top" title="Home">
-            <i class="bounce fa fa-home display-3 mb-0"></i>
+            <i class="bounce fa fa-home display-4 mb-0"></i>
           </a>
         </div>
       </div>
