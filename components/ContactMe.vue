@@ -47,36 +47,39 @@
         </div>
       </div>
 
-      <div class="row">
+      <div class="row mt-3">
         <button
           type="reset"
+          title="Clear all fields"
           class="btn btn-lg btn-outline-danger col shadow mr-4"
           v-on:click="reset()"
         >
           <i class="fa fa-times mr-4" />Reset
         </button>
 
-        <button class="btn btn-lg btn-outline-primary col shadow" v-on:click="validateData()">
+        <button
+          title="Send Message"
+          v-on:click="validateData()"
+          class="btn btn-lg btn-outline-primary col shadow"
+        >
           <i class="fa fa-envelope-o mr-4"></i>Send
         </button>
 
         <div class="col-2 text-center">
-          <jump-down anchor="social" />
+          <a href="#top" title="Home">
+            <i class="bounce fa fa-home display-3 mb-0"></i>
+          </a>
         </div>
       </div>
     </div>
   </div>
 </template>
 
+
 <script>
 import axios from "axios";
-import JumpDown from "~/components/JumpDown.vue";
 
 export default {
-  components: {
-    JumpDown
-  },
-
   data: function() {
     return {
       alertType: null,

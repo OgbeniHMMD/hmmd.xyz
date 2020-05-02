@@ -6,8 +6,12 @@
   >
     <div class="display-1">
       <div>
+        <a href="#top" title="Home">
+          <i class="bounce fa fa-home my-3 mx-4 ml-md-0"></i>
+        </a>
+
         <a href="/blog" title="Blog">
-          <i class="fa fa-newspaper-o my-3 mx-4 ml-md-0"></i>
+          <i class="fa fa-newspaper-o my-3 mx-4"></i>
         </a>
 
         <a href="#contact" title="E-mail">
@@ -23,11 +27,7 @@
         </a>
 
         <a href="//github.com/OgbeniHMMD" title="Github">
-          <i class="fa fa-github my-3 mx-4"></i>
-        </a>
-
-        <a href="#top" title="Jump Up">
-          <i class="bounce fa fa-chevron-up my-3 mx-4 mr-md-0"></i>
+          <i class="fa fa-github my-3 mx-4 mr-md-0"></i>
         </a>
       </div>
     </div>
@@ -35,7 +35,7 @@
 </template>
 
 
-<style lang="scss" scoped>
+<style lang="scss"  >
 .bounce {
   -webkit-animation: bounce 2s;
   animation: bounce 2s;

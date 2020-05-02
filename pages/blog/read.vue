@@ -23,7 +23,7 @@
         </div>
       </header>
 
-      <div v-html="article.content" class="mt-5 lead"></div>
+      <div v-html="article.content" class="mt-4 lead"></div>
 
       <div class="mt-4">
         <vue-disqus

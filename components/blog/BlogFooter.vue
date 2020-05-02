@@ -3,7 +3,10 @@
     <div
       class="container-fluid d-flex flex-column flex-md-row justify-content-between align-items-center py-4 px-3 p-md-5"
     >
-      <div>&copy; 2020,  <a href="/">Olajide A. Hammed</a></div>
+      <div>
+        &copy;
+        <a href="/">Olajide A. Hammed</a>
+      </div>
 
       <div class="pt-4 pt-md-0">
         Powered by:

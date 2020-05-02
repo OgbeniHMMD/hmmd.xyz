@@ -1,39 +1,32 @@
 <template>
   <div
     id="top"
-    class="d-flex justify-content-center align-items-center min-vh-100 border-primary border-bottom text-center p-2 m-0 my-auto"
+    class="d-flex justify-content-center align-items-center flex-column min-vh-100 border-primary border-bottom text-center p-2 m-0 my-auto"
     style="background-image: url('/patterns/subtle-grey.png')"
   >
-    <div class="row m-0">
-      <div class="col-12 p-0 text-primary">
-        <img
-          id="photo"
-          src="~/assets/img/OgbeniHMMD.jpg"
-          class="img-fluid rounded-circle border border-primary"
-          alt="OgbeniHMMD"
-        />
-        <div class="display-4 mt-3" style=" ">Olajide A. Hammed</div>
-        <div class="h2 mt-3">Freelancer, Front-end web developer...</div>
+    <div class="w-100 p-3 text-primary">
+      <img
+        id="photo"
+        src="~/assets/img/OgbeniHMMD.jpg"
+        class="img-fluid rounded-circle border border-primary"
+        alt="OgbeniHMMD"
+      />
+      <div class="display-4 my-3" style=" ">Olajide A. Hammed</div>
+      <div class="h2 my-3">Freelancer, Front-end web developer...</div>
+    </div>
 
-        <jump-down anchor="about" />
-      </div>
+    <div class="h3 p-2 m-0">
+      <a class="btn btn-lg btn-outline-primary mr-5" href="#about">About</a>
+      <a class="btn btn-lg btn-outline-primary mr-5" href="#social">Contact</a>
+      <a class="btn btn-lg btn-outline-primary" href="/blog">Blog</a>
     </div>
   </div>
 </template>
 
-<script>
-import JumpDown from "~/components/JumpDown.vue";
-
-export default {
-  components: {
-    JumpDown
-  }
-};
-</script>
 
 <style lang="scss">
 #photo {
-  animation: 1s appear;
+  animation: 2s appear;
   margin: auto;
 }
 
