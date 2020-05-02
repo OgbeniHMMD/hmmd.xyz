@@ -57,7 +57,7 @@ export default {
       )
       .then(response => {
         this.spinner = false;
-        this.article = response.data;
+        this.posts = response.data;
       })
       .catch(e => {
         $nuxt.error({ message: e.message });
