@@ -15,10 +15,10 @@
       <div class="h2 my-3">Freelancer, Front-end web developer...</div>
     </div>
 
-    <div class="h3 p-2 m-0">
-      <a class="btn btn-lg btn-outline-primary mr-5" href="#about">About</a>
-      <a class="btn btn-lg btn-outline-primary mr-5" href="#social">Contact</a>
-      <a class="btn btn-lg btn-outline-primary" href="/blog">Blog</a>
+    <div class="h3 p-1 m-0">
+      <a class="btn btn -lg btn-outline-primary px-md-5 mr-3 mr-md-5" href="#about">About</a>
+      <a class="btn btn-lg btn-outline-primary mr-3 mr-md-5" href="#social">Contact</a>
+      <a class="btn btn -lg btn-outline-primary px-md-5" href="/blog">Blog</a>
     </div>
   </div>
 </template>

@@ -16,7 +16,7 @@
           href="#social"
           class="font-weight-bold"
         >contact me here</a>, or email me at
-        <a class="font-weight-bold" href="mailto:Ogbeni@hmmd.xyz">Ogbeni@hmmd.xyz</a>
+        <a href="mailto:Ogbeni@hmmd.xyz">Ogbeni@hmmd.xyz</a>
       </p>
     </div>
   </div>
