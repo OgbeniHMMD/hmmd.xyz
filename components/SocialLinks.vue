@@ -4,29 +4,29 @@
     class="d-flex justify-content-center align-items-center min-vh-100 border-primary border-bottom text-center m-0 my-auto"
     style="background-image: url('/patterns/stardust.png')"
   >
-    <div>
+    <div class="display-1 p-2">
       <a href="#top" title="Home">
-        <i class="bounce fa fa-home display-1 my-3 mx-4 mx-md-4"></i>
+        <i class="bounce fa fa-home my-3 mx-4 mx-md-4"></i>
       </a>
 
       <a href="/blog" title="Blog">
-        <i class="fa fa-newspaper-o display-1 m-4"></i>
+        <i class="fa fa-newspaper-o m-4"></i>
       </a>
 
       <a href="#contact" title="E-mail">
-        <i class="fa fa-envelope display-1 m-4"></i>
+        <i class="fa fa-envelope m-4"></i>
       </a>
 
       <a href="//t.me/OgbeniHMMD" title="Telegram">
-        <i class="fa fa-telegram display-1 m-4"></i>
+        <i class="fa fa-telegram m-4"></i>
       </a>
 
       <a href="//twitter.com/OgbeniHMMD" title="Twitter">
-        <i class="fa fa-twitter display-1 m-4"></i>
+        <i class="fa fa-twitter m-4"></i>
       </a>
 
       <a href="//github.com/OgbeniHMMD" title="Github">
-        <i class="fa fa-github display-1 m-4"></i>
+        <i class="fa fa-github m-4"></i>
       </a>
     </div>
   </div>
