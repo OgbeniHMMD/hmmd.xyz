@@ -9,13 +9,11 @@
         <h1 class="col-12 p-0 mb-4">Contact Me</h1>
 
         <div
-          role="alert"
-          v-if="alertMsg"
-          :class="'alert-' + alertType"
-          class="col-12 alert fade show text-center"
-        >
-          <span v-html="alertMsg"></span>
-        </div>
+          v-if="alert.msg"
+          class="col-12 alert text-center"
+          :class="`alert-${alert.type}`"
+          v-html="alert.msg"
+        ></div>
 
         <div class="col-12 col-md-6 p-0">
           <input
@@ -84,13 +82,10 @@ import axios from "axios";
 export default {
   data: function() {
     return {
-      alertType: null,
-      alertMsg: null,
-
+      alert: {},
       name: "",
       email: "",
       textArea: "",
-
       chatId: "1229306973",
       token: "bot1200246144:AAFgPUdih32F60oA-C-Ratzoxdqvm_7R6A8",
       reg: /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,24}))$/
@@ -99,11 +94,9 @@ export default {
 
   methods: {
     reset() {
-      this.alerType = "";
-      this.alertMsg = "";
-
       this.name = "";
       this.email = "";
+      this.alert = {};
       this.textArea = "";
     },
 
@@ -114,11 +107,14 @@ export default {
 
     validateData() {
       if (this.name === "") {
-        this.showAlert("warning", "Please enter a name");
+        this.alert = { type: "warning", msg: "Please enter a name" };
       } else if (this.email === "" || !this.reg.test(this.email)) {
-        this.showAlert("warning", "Your e-mail is invalid");
+        this.alert = {
+          type: "warning",
+          msg: "Enter a valid e-mail"
+        };
       } else if (this.textArea === "") {
-        this.showAlert("warning", "Please enter your message");
+        this.alert = { type: "warning", msg: "Please enter your message" };
       } else {
         this.sendMsg();
       }
@@ -126,6 +122,8 @@ export default {
 
     async sendMsg() {
       try {
+        this.alert = { type: "dark", msg: `<i class='fa fa-spinner fa-spin mr-3'></i>Sending Message...` };
+
         await axios.get(
           `https://api.telegram.org/${this.token}/sendMessage?chat_id=${
             this.chatId
@@ -133,12 +131,16 @@ export default {
             this.textArea + "\n \n- - - - -\n" + this.name + " | " + this.email
           )}&parse_mode=html`
         );
-        this.showAlert("success", "Message sent. Thank you!");
+        this.name = "";
+        this.email = "";
+        this.textArea = "";
+        this.alert = { type: "success", msg: "Message Sent!" };
       } catch (e) {
-        this.showAlert(
-          "danger",
-          "An error occured, your Message was not sent. <br /> Alternatively, you can send an email to <b>Ogbeni@hmmd.xyz</b>"
-        );
+        this.alert = {
+          type: "danger",
+          msg:
+            "An error occured, your Message was not sent. <br /> Alternatively, you can send an email to <b>Ogbeni@hmmd.xyz</b>"
+        };
       }
     }
   }
