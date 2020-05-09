@@ -100,11 +100,6 @@ export default {
       this.textArea = "";
     },
 
-    showAlert(type, msg) {
-      this.alertType = type;
-      this.alertMsg = msg;
-    },
-
     validateData() {
       if (this.name === "") {
         this.alert = { type: "warning", msg: "Please enter a name" };
@@ -122,7 +117,10 @@ export default {
 
     async sendMsg() {
       try {
-        this.alert = { type: "dark", msg: `<i class='fa fa-spinner fa-spin mr-3'></i>Sending Message...` };
+        this.alert = {
+          type: "dark",
+          msg: `<i class='fa fa-spinner fa-spin mr-3'></i>Sending Message...`
+        };
 
         await axios.get(
           `https://api.telegram.org/${this.token}/sendMessage?chat_id=${
@@ -131,9 +129,8 @@ export default {
             this.textArea + "\n \n- - - - -\n" + this.name + " | " + this.email
           )}&parse_mode=html`
         );
-        this.name = "";
-        this.email = "";
-        this.textArea = "";
+
+        this.reset();
         this.alert = { type: "success", msg: "Message Sent!" };
       } catch (e) {
         this.alert = {
