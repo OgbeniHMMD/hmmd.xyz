@@ -67,9 +67,13 @@
               </div>
               <div class="w-100">
                 <div class="h1">PROFILE</div>
-                <p>Bla bla bla bla bla bla bla bla bla</p>
-                <p>Bla bla bla bla bla bla bla bla bla</p>
-                <p>Bla bla bla bla bla bla bla bla bla</p>
+                <div class="pb-4">
+                  I am a skilled and successful product engineer within the automotive industry with an HND in mechanical
+                  engineering and seven years of experience in the sector.
+                  Having worked in a number of labs handling vehicle-based testing and mentoring development technicians,
+                  I am confident in managing teams in a hands-on environment and running new development projects from briefing to sign off.
+                  Currently looking for a role that complements my skill set and experience. Available immediately.
+                </div>
               </div>
             </div>
           </div>
@@ -81,9 +85,26 @@
               </div>
               <div class="w-100">
                 <div class="h1">EDUCATION</div>
-                <p>Bla bla bla bla bla bla bla bla bla</p>
-                <p>Bla bla bla bla bla bla bla bla bla</p>
-                <p>Bla bla bla bla bla bla bla bla bla</p>
+                <div class="pb-4">
+                  <div class="font-weight-bold">
+                    HIGHER NATIONAL DIPLOMA &mdash; Computer Science
+                  </div>
+                  <div>Lagos State Polytechnic, [in view 2021]</div>
+                </div>
+
+                <div class="pb-4">
+                  <div class="font-weight-bold">NATIONAL DIPLOMA &mdash; Computer Science</div>
+                  <div>
+                    Lagos State Polytechnic, 2015</time>
+                  </div>
+                </div>
+
+                <div class="pb-4">
+                  <div class="font-weight-bold">
+                    SSCE &mdash;
+                    <time>2010</time>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -106,6 +127,16 @@
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  head() {
+    return {
+      title: "Olajide A. Hammed - Resume"
+    };
+  }
+};
+</script>
 
 <style >
 * {
