@@ -16,7 +16,7 @@
 
       <div class="h1 mb-0 p-1">
         <a href="#about" title="About">
-          <i class="fa fa-info-circle bounce p-2 p-sm-3 px-md-4 m-1"></i>
+          <i class="fa fa-chevron-circle-down bounce p-2 p-sm-3 px-md-4 m-1"></i>
         </a>
 
         <a href="#contact" title="Contact">
