@@ -29,7 +29,6 @@ export default {
         href:
           "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
       },
-
       {
         rel: "stylesheet",
         href: "https://fonts.googleapis.com/css?family=Changa&display=swap"
@@ -51,7 +50,11 @@ export default {
   /*
    ** Nuxt.js dev-modules
    */
-  buildModules: [],
+  buildModules: [
+    ['@nuxtjs/google-analytics', {
+      id: 'UA-165979019-1'
+    }]
+  ],
   /*
    ** Nuxt.js modules
    */
@@ -72,9 +75,9 @@ export default {
     /*
      ** You can extend webpack config here
      */
-    extend(config, ctx) {}
+    extend(config, ctx) { }
   },
   generate: {
-    fallback: true // If you want to use '404.html' instead of the default '200.html'
+    fallback: true // Use '404.html' instead of the default '200.html'
   }
 };
