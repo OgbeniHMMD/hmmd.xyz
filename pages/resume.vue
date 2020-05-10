@@ -1,6 +1,6 @@
 <template>
   <div class="p-4 min-vh-100" style="background-image: url('/patterns/stardust.png')">
-    <div class="container border border-primary">
+    <div class="container-fluid border border-primary">
       <div class="row">
         <aside class="col-4 bg-primary p-0">
           <div class="bg-primary text-white border-bottom border-white px-4 py-5">
@@ -16,7 +16,7 @@
               <i class="fa fa-phone mr-4"></i> +234 (0)810 092 8503
             </div>
             <div class="py-3">
-              <i class="fa fa-envelope mr-4"></i> olajide.a.hammed@gmail.com
+              <i class="fa fa-envelope mr-4"></i> Olajide.A.Hammed@gmail.com
             </div>
             <div class="py-3">
               <a class="text-white" href="//github.ccom/OgbeniHMMD">
@@ -43,13 +43,16 @@
               <i class="fa fa-asterisk mr-3"></i> HTML/CSS
             </div>
             <div class="py-3">
-              <i class="fa fa-asterisk mr-3"></i> JAVASCRIPT
+              <i class="fa fa-asterisk mr-3"></i> Bootstrap
             </div>
             <div class="py-3">
-              <i class="fa fa-asterisk mr-3"></i> VUE.JS/ NUXT.JS
+              <i class="fa fa-asterisk mr-3"></i> Javascript/Vue.js
             </div>
             <div class="py-3">
-              <i class="fa fa-asterisk mr-3"></i> VUE.JS/ NUXT.JS
+              <i class="fa fa-asterisk mr-3"></i> Git/Github
+            </div>
+            <div class="py-3">
+              <i class="fa fa-asterisk mr-3"></i> Linux/CLI
             </div>
           </div>
         </aside>
@@ -61,41 +64,42 @@
           </div>
 
           <div class="p-5 border-top border-primary">
-            <div class="d-flex my-4 w-100">
+            <div class="d-flex w-100">
               <div>
                 <i class="fa fa-user h1 mr-4"></i>
               </div>
               <div class="w-100">
                 <div class="h1">PROFILE</div>
                 <div class="pb-4">
-                  I am a skilled and successful product engineer within the automotive industry with an HND in mechanical
-                  engineering and seven years of experience in the sector.
-                  Having worked in a number of labs handling vehicle-based testing and mentoring development technicians,
-                  I am confident in managing teams in a hands-on environment and running new development projects from briefing to sign off.
-                  Currently looking for a role that complements my skill set and experience. Available immediately.
+                  <p>
+                    I am a hobbiest &mdash; freelance &mdash; javascript &mdash; frontend developer. I build web apps usually with the JAMstack
+                    [I.e Javascript (vanilla JS, ES6, Vue.js), the markup languages and/or frameworks (Html/CSS, Bootstrap), and maybe some Xaas (Everything-as-a-Service) solutions]
+                  </p>
+                  <p>I have histories with ASP.NET/VB.NET, Java(SE), Python, PHP (Code Igniter, Laravel), Wordpress...</p>
+                  <p>I don't crumble under pressure, and I'm ever willing to learn new technologies.</p>
+                  <p>I'm looking for a role of a junior web developer in a real company</p>
                 </div>
               </div>
             </div>
           </div>
 
           <div class="p-5 border-top border-primary">
-            <div class="d-flex my-4">
+            <div class="d-flex">
               <div>
                 <i class="fa fa-graduation-cap h1 mr-4"></i>
               </div>
               <div class="w-100">
                 <div class="h1">EDUCATION</div>
                 <div class="pb-4">
-                  <div class="font-weight-bold">
-                    HIGHER NATIONAL DIPLOMA &mdash; Computer Science
-                  </div>
+                  <div class="font-weight-bold">HIGHER NATIONAL DIPLOMA &mdash; Computer Science</div>
                   <div>Lagos State Polytechnic, [in view 2021]</div>
                 </div>
 
                 <div class="pb-4">
                   <div class="font-weight-bold">NATIONAL DIPLOMA &mdash; Computer Science</div>
                   <div>
-                    Lagos State Polytechnic, 2015</time>
+                    Lagos State Polytechnic,
+                    <time>2015</time>
                   </div>
                 </div>
 
@@ -110,15 +114,21 @@
           </div>
 
           <div class="p-5 border-top border-primary">
-            <div class="d-flex my-4">
+            <div class="d-flex">
               <div>
                 <i class="fa fa-paint-brush h1 mr-4"></i>
               </div>
               <div class="w-100">
                 <div class="h1">INTERESTS</div>
-                <p>Bla bla bla bla bla bla bla bla bla</p>
-                <p>Bla bla bla bla bla bla bla bla bla</p>
-                <p>Bla bla bla bla bla bla bla bla bla</p>
+                <p>
+                  <i class="fa fa-circle-thin mr-3"></i> Reading
+                </p>
+                <p>
+                  <i class="fa fa-circle-thin mr-3"></i> Sewing
+                </p>
+                <p>
+                  <i class="fa fa-circle-thin mr-3"></i> Volunteer Work/Community Involvement
+                </p>
               </div>
             </div>
           </div>
@@ -132,13 +142,14 @@
 export default {
   head() {
     return {
-      title: "Olajide A. Hammed - Resume"
+      title: "Olajide A. Hammed - Resume",
+      meta: [{ name: "viewport", content: "initial-scale=0.1" }]
     };
   }
 };
 </script>
 
-<style >
+<style scoped>
 * {
   //outline: 1px solid tomato;
 }
