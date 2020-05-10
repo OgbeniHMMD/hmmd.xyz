@@ -1,9 +1,9 @@
 <template>
-  <div class="p-4 min-vh-100" style="background-image: url('/patterns/stardust.png')">
-    <div class="container-fluid border border-primary">
+  <div class="p-5 min-vh-100" style="background-image: url('/patterns/stardust.png')">
+    <div class="container border border-primary">
       <div class="row">
         <aside class="col-4 bg-primary p-0">
-          <div class="bg-primary text-white border-bottom border-white px-4 py-5">
+          <div class="bg-primary text-white border-bottom border-white px-3 py-5">
             <div class="text-center">
               <img
                 id="photo"
@@ -12,25 +12,23 @@
                 alt="OgbeniHMMD"
               />
             </div>
-            <div class="py-3">
-              <i class="fa fa-phone mr-4"></i> +234 (0)810 092 8503
+            <div class="py-3 text-break">
+              <i class="fa fa-phone fa-pull-left mr-3"></i> +234 (0)810 092 8503
             </div>
-            <div class="py-3">
-              <i class="fa fa-envelope mr-4"></i> Olajide.A.Hammed@gmail.com
+            <div class="py-3 text-break">
+              <i class="fa fa-envelope fa-pull-left mr-3"></i> Olajide.A.Hammed@gmail.com
             </div>
-            <div class="py-3">
-              <a class="text-white" href="//github.ccom/OgbeniHMMD">
-                <i class="fa fa-map-marker mr-4"></i> Lagos, Nigeria
+            <div class="py-3 text-break">
+              <i class="fa fa-map-marker fa-pull-left mr-4"></i> Lagos, Nigeria
+            </div>
+            <div class="py-3 text-break">
+              <a class="text-white text-decoration-none" href="/">
+                <i class="fa fa-link mr-3"></i> www.hmmd.xyz
               </a>
             </div>
-            <div class="py-3">
-              <a class="text-white" href="/">
-                <i class="fa fa-link mr-4"></i> https://www.hmmd.xyz
-              </a>
-            </div>
-            <div class="py-3">
-              <a class="text-white" href="//github.ccom/OgbeniHMMD">
-                <i class="fa fa-github mr-4"></i> https://github.com/OgbeniHMMD
+            <div class="py-3 text-break">
+              <a class="text-white text-decoration-none" href="//github.ccom/OgbeniHMMD">
+                <i class="fa fa-github mr-3"></i> github.com/OgbeniHMMD
               </a>
             </div>
           </div>
@@ -72,8 +70,8 @@
                 <div class="h1">PROFILE</div>
                 <div class="pb-4">
                   <p>
-                    I am a hobbiest &mdash; freelance &mdash; javascript &mdash; frontend developer. I build web apps usually with the JAMstack
-                    [I.e Javascript (vanilla JS, ES6, Vue.js), the markup languages and/or frameworks (Html/CSS, Bootstrap), and maybe some Xaas (Everything-as-a-Service) solutions]
+                    I am a hobbiest &mdash; freelance &mdash; javascript &mdash; frontend web developer. I build web apps usually with the JAMstack,
+                    I.e, Javascript (vanilla JS, ES6, Vue.js), the markup languages and/or frameworks (Html/CSS, Bootstrap), and maybe some Everything-as-a-Service (Xaas) solutions.
                   </p>
                   <p>I have histories with ASP.NET/VB.NET, Java(SE), Python, PHP (Code Igniter, Laravel), Wordpress...</p>
                   <p>I don't crumble under pressure, and I'm ever willing to learn new technologies.</p>
@@ -150,7 +148,9 @@ export default {
 </script>
 
 <style scoped>
-* {
-  //outline: 1px solid tomato;
+.container,
+.container-fluid {
+  /* Set width to your desired site width */
+  max-width: 1170px;
 }
 </style>

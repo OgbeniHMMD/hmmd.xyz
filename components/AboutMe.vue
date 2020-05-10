@@ -5,10 +5,10 @@
     style="background-image: url('/patterns/asfalt-dark.png')"
   >
     <div class="p-3 p-md-5">
-      <p class="h2 mb-4">Hello! I'm a web developer from Lagos, Nigeria.</p>
+      <p class="h2 mb-4">Hello!</p>
       <p class="h2 mb-4">
-        I make web applications, usually with the
-        <abbr title="Javascript, API and Markup">JAMstack</abbr>.
+        I am a hobbiest — freelance — javascript — frontend web developer. I build web apps usually with the JAMstack,
+        I.e, Javascript (vanilla JS, ES6, Vue.js), the markup languages and/or frameworks (Html/CSS, Bootstrap), and maybe some Everything-as-a-Service (Xaas) solutions.
       </p>
       <p class="h2 mb-0">
         If you are a business seeking a web presence, or you're an employer looking to hire, you can
