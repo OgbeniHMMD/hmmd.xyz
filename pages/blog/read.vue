@@ -1,10 +1,10 @@
 <template>
   <div class="container p-2">
-    <div v-if="spinner" class="text-center">
-      <i class="fa fa-spinner fa-spin h1 text-primary m-5"></i>
+    <div v-if="!article" class="text-center h1">
+      <i class="fa fa-spinner fa-spintext-primary m-5"></i>
     </div>
 
-    <div v-if="!spinner">
+    <template else>
       <header class="border-bottom py-2">
         <h1 class="mt-0">{{article.title}}</h1>
         <div class="text-muted mt-auto">
@@ -32,7 +32,7 @@
           :url="`https://hmmd.xyz${$nuxt.$route.fullPath}`"
         ></vue-disqus>
       </div>
-    </div>
+    </template>
   </div>
 </template>
 
@@ -45,14 +45,13 @@ export default {
   layout: "blog",
   data: function() {
     return {
-      spinner: true,
       article: "",
       bloggerJSON
     };
   },
   head() {
     return {
-      title: this.article.title + " - OgbeniHMMD's Blog"
+      title: `${this.article.title} - OgbeniHMMD's Blog`
     };
   },
   created() {
@@ -60,13 +59,8 @@ export default {
       .get(
         `https://www.googleapis.com/blogger/v3/blogs/${this.bloggerJSON.id}/posts/${this.$route.query.id}?key=${this.bloggerJSON.key}`
       )
-      .then(response => {
-        this.spinner = false;
-        this.article = response.data;
-      })
-      .catch(e => {
-        $nuxt.error({ message: e.message });
-      });
+      .then(response => (this.article = response.data))
+      .catch(e => $nuxt.error({ message: e.message }));
   }
 };
 </script>

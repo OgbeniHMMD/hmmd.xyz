@@ -1,7 +1,7 @@
 <template>
   <div class="container p-2">
-    <div v-if="spinner" class="text-center">
-      <i class="fa fa-spinner fa-spin h1 text-primary m-5"></i>
+    <div v-if="spinner" class="text-center h1">
+      <i class="fa fa-spinner fa-spin text-primary m-5"></i>
     </div>
 
     <div v-if="!spinner">
@@ -59,9 +59,7 @@ export default {
         this.spinner = false;
         this.posts = response.data;
       })
-      .catch(e => {
-        $nuxt.error({ message: e.message });
-      });
+      .catch(e => $nuxt.error({ message: e.message }));
   }
 };
 </script>
