@@ -1,5 +1,5 @@
 <template>
-  <div class="p-5 min-vh-100" style="background-image: url('/patterns/stardust.png')">
+  <div class="p-5 min-vh-100 vh-100" style="background-image: url('/patterns/stardust.png')">
     <div class="container border border-primary">
       <div class="row">
         <aside class="col-4 bg-primary p-0">
