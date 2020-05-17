@@ -17,21 +17,14 @@ export default {
     link: [
       { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
       {
-        rel: "preconnect",
-        href: "https://fonts.gstatic.com/",
-        crossorigin: true
-      },
-      {
-        rel: "stylesheet",
-        crossorigin: "anonymous",
-        integrity:
-          "sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN",
-        href:
-          "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-      },
-      {
         rel: "stylesheet",
         href: "https://fonts.googleapis.com/css?family=Changa&display=swap"
+      }
+    ],
+    script: [
+      {
+        crossorigin: "anonymous",
+        src: "https://kit.fontawesome.com/57b5a4abc3.js"
       }
     ]
   },
@@ -51,9 +44,12 @@ export default {
    ** Nuxt.js dev-modules
    */
   buildModules: [
-    ['@nuxtjs/google-analytics', {
-      id: 'UA-165979019-1'
-    }]
+    [
+      "@nuxtjs/google-analytics",
+      {
+        id: "UA-165979019-1"
+      }
+    ]
   ],
   /*
    ** Nuxt.js modules
@@ -75,7 +71,7 @@ export default {
     /*
      ** You can extend webpack config here
      */
-    extend(config, ctx) { }
+    extend(config, ctx) {}
   },
   generate: {
     fallback: true // Use '404.html' instead of the default '200.html'
