@@ -1,7 +1,6 @@
 <template>
   <div
-    id="contact"
-    class="d-flex justify-content-center align-items-center min-vh-100 border-dark border-bottom text -center p-2 m-0 my-auto"
+    class="d-flex justify-content-center align-items-center min-vh-100 vh-100 border-dark border-bottom text -center p-2 m-0 my-auto"
     style="background-image: url('/patterns/white-texture.png')"
   >
     <div class="container p-3">
@@ -66,8 +65,8 @@
         </button>
 
         <div class="col-2 text-center">
-          <a href="#top" title="Home">
-            <i class="bounce fa fa-home display-4 mb-0"></i>
+          <a href="#top" title="Home" class="display-4">
+            <i class="bounce fa fa-home"></i>
           </a>
         </div>
       </div>

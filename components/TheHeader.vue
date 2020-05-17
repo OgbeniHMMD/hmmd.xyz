@@ -1,7 +1,6 @@
 <template>
   <div
-    id="top"
-    class="d-flex justify-content-center align-items-center flex-column min-vh-100 border-primary border-bottom text-center p-2 m-0 my-auto"
+    class="d-flex justify-content-center align-items-center flex-column min-vh-100 vh-100 border-primary border-bottom text-center p-2 m-0 my-auto"
     style="background-image: url('/patterns/subtle-grey.png')"
   >
     <div class="w-100 text-primary">
