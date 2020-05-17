@@ -1,8 +1,5 @@
 export default {
   mode: "universal",
-  /*
-   ** Headers of the page
-   */
   head: {
     title: "OgbeniHMMD" || process.env.npm_package_name,
     meta: [
