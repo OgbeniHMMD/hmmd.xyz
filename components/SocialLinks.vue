@@ -1,8 +1,7 @@
 <template>
   <div
     id="social"
-    class="d-flex justify-content-center align-items-center min-vh-100 border-primary border-bottom text-center m-0 my-auto"
-    style="background-image: url('/patterns/stardust.png')"
+    class="d-flex justify-content-center align-items-center min-vh-100 border-bottom text-center m-0 my-auto"
   >
     <div class="display-1 p-2">
       <a href="#top" title="Home">

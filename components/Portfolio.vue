@@ -1,7 +1,6 @@
 <template>
   <div
-    class="d-flex justify-content-center align-items-center min-vh-100 vh-100 border-dark border-bottom m-0 my-auto"
-    style="background-image: url('/patterns/subtle-grey.png')"
+    class="d-flex justify-content-center align-items-center min-vh-100 vh-100 border-bottom m-0 my-auto"
   >
     <div class="h2 p-3 p-md-5">
       <p>This section is under construction.</p>

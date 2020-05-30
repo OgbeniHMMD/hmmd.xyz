@@ -1,7 +1,6 @@
 <template>
   <div
-    class="d-flex justify-content-center align-items-center min-vh-100 vh-100 border-dark border-bottom text -center p-2 m-0 my-auto"
-    style="background-image: url('/patterns/white-texture.png')"
+    class="d-flex justify-content-center align-items-center min-vh-100 vh-100 border-bottom p-2 m-0 my-auto"
   >
     <div class="container p-3">
       <div class="row">
