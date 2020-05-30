@@ -1,3 +1,5 @@
+// https://github.com/twbs/bootstrap/issues/28350
+
 $positions: static, relative, absolute, fixed, sticky;
 
 @each $breakpoint in map-keys($grid-breakpoints) {
