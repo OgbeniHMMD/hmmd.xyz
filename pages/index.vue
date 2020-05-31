@@ -5,8 +5,8 @@
     </nav>
     <main class="col-12 col-lg-7 col-xl-8 offset-lg-5 offset-xl-4 p-0">
       <intro-section id="intro" />
-      <portfolio id="portfolio" />
-      <contact-me id="contact" />
+      <portfolio-section id="portfolio" />
+      <contact-section id="contact" />
     </main>
   </div>
 </template>
@@ -15,15 +15,15 @@
 <script>
 import TheHeader from "~/components/TheHeader.vue";
 import IntroSection from "~/components/IntroSection.vue";
-import Portfolio from "~/components/Portfolio.vue";
-import ContactMe from "~/components/ContactMe.vue";
+import PortfolioSection from "~/components/PortfolioSection.vue";
+import ContactSection from "~/components/ContactSection.vue";
 
 export default {
   components: {
     TheHeader,
     IntroSection,
-    Portfolio,
-    ContactMe
+    PortfolioSection,
+    ContactSection
   }
 };
 </script>

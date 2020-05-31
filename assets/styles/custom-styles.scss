@@ -9,7 +9,7 @@ body {
   background-image: url(/patterns/black-thread-light.png);
 }
 
-// ----------------------------
+// -------------- Animations --------------
 .bounce {
   -webkit-animation: bounce 2s;
   animation: bounce 2s;
@@ -52,5 +52,20 @@ body {
   60% {
     -webkit-transform: translateY(-12px);
     transform: translateY(-12px);
+  }
+}
+
+// photo effect
+#photo {
+  animation: 2s appear;
+  margin: auto;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }

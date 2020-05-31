@@ -1,8 +1,8 @@
 <template>
-  <div
-    class="d-flex justify-content-center align-items-center flex-column min-vh-100 text-center p-2 m-0 my-auto"
+  <section
+    class="d-flex justify-content-center align-items-center flex-column min-vh-100 m-0 my-auto"
   >
-    <div class="w-100 text-primary">
+    <div class="w-100 text-center text-primary p-2">
       <img
         id="photo"
         src="~/assets/img/OgbeniHMMD.jpg"
@@ -13,7 +13,7 @@
 
       <div class="d-flex justify-content-around h1 mb-0 p-1">
         <a href="#intro" class="d-lg-none">
-          <i class="fa fa-chevron-down text-danger bounce p-2 p-sm-3"></i>
+          <i class="fa fa-chevron-circle-down text-dark bounce p-2 p-sm-3"></i>
         </a>
 
         <a href="//t.me/OgbeniHMMD" title="Telegram">
@@ -29,22 +29,5 @@
         </a>
       </div>
     </div>
-  </div>
+  </section>
 </template>
-
-
-<style lang="scss">
-#photo {
-  animation: 2s appear;
-  margin: auto;
-}
-
-@keyframes appear {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-</style>
