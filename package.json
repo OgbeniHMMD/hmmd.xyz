@@ -1,6 +1,6 @@
 {
   "name": "hmmd.xyz",
-  "version": "0.1.0",
+  "version": "0.1.8",
   "description": "My super Nuxt.js project",
   "author": "Olajide A. Hammed",
   "private": true,
@@ -12,6 +12,7 @@
     "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
   },
   "dependencies": {
+    "@nuxt/content": "^1.2.0",
     "@nuxtjs/axios": "^5.9.7",
     "@nuxtjs/google-adsense": "^1.1.3",
     "@nuxtjs/pwa": "^3.0.0-0",
