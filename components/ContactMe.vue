@@ -1,8 +1,8 @@
 <template>
   <div
-    class="d-flex justify-content-center align-items-center min-vh-100 vh-100 border-bottom p-2 m-0 my-auto"
+    class="d-flex justify-content-center align-items-center min-vh-100 border-bottom p-2 m-0 my-auto"
   >
-    <div class="container p-3">
+    <div class="container p-3 px-md-5">
       <div class="row">
         <h1 class="col-12 p-0 mb-4">Contact Me</h1>
 
@@ -49,7 +49,7 @@
         <button
           type="reset"
           title="Clear all fields"
-          class="btn btn-outline-danger col shadow mr-4"
+          class="btn btn-lg btn-outline-danger col shadow mr-4"
           v-on:click="reset()"
         >
           <i class="fa fa-times mr-4" />Reset
@@ -58,16 +58,10 @@
         <button
           title="Send Message"
           v-on:click="validateData()"
-          class="btn btn-outline-primary col shadow"
+          class="btn btn-lg btn-outline-primary col shadow"
         >
           <i class="fa fa-envelope-o mr-4"></i>Send
         </button>
-
-        <div class="col-2 text-center">
-          <a href="#top" title="Home" class="display-4">
-            <i class="bounce fa fa-home"></i>
-          </a>
-        </div>
       </div>
     </div>
   </div>
