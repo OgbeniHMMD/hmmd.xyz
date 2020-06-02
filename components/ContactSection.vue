@@ -101,7 +101,7 @@ export default {
       } else if (this.email === "" || !reg.test(this.email)) {
         this.alert = {
           type: "warning",
-          msg: "<i class='fa fa-envelope mr-3'></i>Enter a valid e-mail"
+          msg: "<i class='fa fa-envelope mr-3'></i>Please Enter A Valid E-mail"
         };
       } else if (this.textArea === "") {
         this.alert = {
@@ -141,11 +141,10 @@ export default {
           msg: "<i class='fa fa-check mr-3'></i>Message Sent!"
         };
       } catch (e) {
-        //show danger alert
+        //show danger alertl
         this.alert = {
           type: "danger",
-          msg:
-            "<i class='fa fa-frown-o mr-2'></i>Sorry, an error occured, your Message was not sent. <br /> Alternatively, you can send an email to <b>Ogbeni@hmmd.xyz</b>"
+          msg: "<i class='fa fa-exclamation-triangle mr-2'></i>Message was not sent. Maybe you lost your connection."
         };
       }
     }
