@@ -1,6 +1,6 @@
 <template>
   <section class="d-flex justify-content-center align-items-center min-vh-100 m-0 my-auto">
-    <div class="container p-3 px-md-5">
+    <div class="container p-4 p-md-5">
       <div class="row">
         <div
           v-if="alert.msg"
@@ -42,15 +42,15 @@
         </div>
       </div>
 
-      <div class="row mt-3">
-        <a class="col-2 h1 text-center text-dark" href="#">
+      <div class="row">
+        <a class="col-3 h1 text-center text-dark" href="#">
           <i class="fa fa-chevron-circle-up bounce"></i>
         </a>
 
         <button
           type="reset"
           title="Clear all fields"
-          class="btn btn-lg btn-outline-danger col shadow mr-4"
+          class="btn btn-md-lg btn-outline-danger col shadow mr-3 mr-md-4"
           v-on:click="reset()"
         >
           <i class="fa fa-times mr-4" />Reset
@@ -59,7 +59,7 @@
         <button
           title="Send Message"
           v-on:click="validateData()"
-          class="btn btn-lg btn-outline-primary col shadow"
+          class="btn btn-md-lg btn-outline-primary col shadow"
         >
           <i class="fa fa-envelope-o mr-4"></i>Send
         </button>
