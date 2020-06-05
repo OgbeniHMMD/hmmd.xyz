@@ -43,7 +43,7 @@
       </div>
 
       <div class="row">
-        <a class="col-3 h1 text-center text-dark" href="#">
+        <a class="col-3 h1 text-center text-dark" href="#" title="Jump Up">
           <i class="fa fa-chevron-circle-up bounce"></i>
         </a>
 
@@ -144,7 +144,8 @@ export default {
         //show danger alertl
         this.alert = {
           type: "danger",
-          msg: "<i class='fa fa-exclamation-triangle mr-2'></i>Message was not sent. Maybe you lost your connection."
+          msg:
+            "<i class='fa fa-exclamation-triangle mr-2'></i>Message was not sent. Maybe you lost your connection."
         };
       }
     }

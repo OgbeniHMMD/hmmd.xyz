@@ -2,7 +2,6 @@
   <div>
     <div
       class="d-flex justify-content-center align-items-center min-vh-100 border-dark text -center p-2 m-0 my-auto"
-      style="background-image: url('/patterns/stardust.png')"
     >
       <div>
         <div class="display-3 text-center">{{error.statusCode}} Error!</div>
@@ -27,7 +26,7 @@ export default {
   },
   head() {
     return {
-      title: "Error - OgbeniHMMD"
+      title: this.error.message + " - " + process.env.app.name
     };
   }
 };

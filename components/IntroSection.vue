@@ -5,18 +5,18 @@
 
       <p class="h2 mb-5">
         I build web apps usually with the JAMstack.
-        <br />#Javascript #Vue.js
+        <br />#Javascript #Vue.js #Nuxt.js
       </p>
     </div>
 
     <div class="d-flex justify-content-around h2 mb-0 p-1">
-      <a href="#portfolio">
+      <a href="#portfolio" title="Portfolio">
         <i class="fa fa-suitcase text-dark p-2 p-sm-3"></i>Portfolio
       </a>
-      <a href="#contact">
+      <a href="#contact" title="Contact me">
         <i class="fa fa-envelope text-dark p-2 p-sm-3"></i>Contact
       </a>
-      <a href="/blog">
+      <a href="/blog" title="Blog">
         <i class="fa fa-newspaper text-dark p-2 p-sm-3"></i>Blog
       </a>
     </div>

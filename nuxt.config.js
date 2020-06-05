@@ -25,6 +25,20 @@ export default {
       }
     ]
   },
+  env: {
+    app: {
+      name: process.env.npm_package_name,
+      slogan: process.env.npm_package_description
+    },
+    blog: {
+      name: "OgbeniHMMD's Blog",
+      slogan: process.env.npm_package_description
+    },
+    links: {
+      twitter: "//twitter.com/OgbeniHMMD",
+      github: "//github.com.com/OgbeniHMMD"
+    }
+  },
   /*
    ** Customize the progress-bar color
    */

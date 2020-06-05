@@ -15,7 +15,11 @@
       </div>
 
       <div class="text-center">
-        <a href="https://github.com/OgbeniHmmd" class="btn btn-outline-primary shadow btn-lg px-5">
+        <a
+          title="Continue browsing on Github"
+          href="https://github.com/OgbeniHmmd"
+          class="btn btn-outline-primary shadow btn-lg px-5"
+        >
           Continue browsing
           <i class="fas fa-chevron-right ml-3"></i>
         </a>
