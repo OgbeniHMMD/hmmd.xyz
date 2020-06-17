@@ -122,13 +122,13 @@
 							<div class="w-100">
 								<div class="h1">INTERESTS</div>
 								<p>
-									<i class="fas fa-circle-thin mr-3"></i> Reading
+									<i class="fas fa-book mr-3"></i> Reading
 								</p>
 								<p>
-									<i class="fas fa-circle-thin mr-3"></i> Sewing
+									<i class="fas fa-tshirt mr-3"></i> Sewing
 								</p>
 								<p>
-									<i class="fas fa-circle-thin mr-3"></i> Volunteer Work/Community Involvement
+									<i class="fas fa-hands-helping mr-3"></i> Volunteer Work/Community Involvement
 								</p>
 							</div>
 						</div>
