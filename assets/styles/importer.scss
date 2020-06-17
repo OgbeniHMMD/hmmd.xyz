@@ -1,0 +1,16 @@
+// Custom Bootstrap Variables
+@import "variables";
+
+// Custom Bootstrap core files
+@import "~/node_modules/bootstrap/scss/bootstrap";
+
+// Custom Bootstrap Styles
+@import "styles";
+
+// Custom Bootstrap Sizings
+@import "positions";
+
+// Font Awesome
+@import "fontawesome/fontawesome.scss";
+@import "fontawesome/solid.scss";
+@import "fontawesome/brands.scss";

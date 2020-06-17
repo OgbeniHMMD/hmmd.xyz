@@ -10,19 +10,6 @@ export default {
         name: "description",
         content: process.env.npm_package_description || ""
       }
-    ],
-    link: [
-      { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
-      {
-        rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css?family=Changa&display=swap"
-      }
-    ],
-    script: [
-      {
-        crossorigin: "anonymous",
-        src: "https://kit.fontawesome.com/57b5a4abc3.js"
-      }
     ]
   },
   env: {
@@ -69,6 +56,7 @@ export default {
     "@nuxtjs/axios",
     "@nuxtjs/pwa",
     "@nuxt/content",
+    "nuxt-webfontloader",
     [
       "@nuxtjs/google-adsense",
       {
@@ -76,6 +64,11 @@ export default {
       }
     ]
   ],
+  webfontloader: {
+    google: {
+      families: ["Changa&display=swap"]
+    }
+  },
   /*
    ** Build configuration
    */
