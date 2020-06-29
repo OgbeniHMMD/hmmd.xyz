@@ -4,11 +4,11 @@
 			<div class="h1 mb-3">Portfolio</div>
 
 			<div class="row mb-4">
-				<div v-for="work in works" class="col-12 col-sm-6 p-0">
-					<div class="shadow-sm bord er m-3">
+				<div v-for="(work, index) in works" v-bind:key="index" class="col-12 col-sm-6 p-0">
+					<div class="shadow-sm rounded-sm m-3">
 						<div class="text-center">
 							<a :href="work.url">
-								<img :src="work.img" class="img-fluid" alt="..." />
+								<img :src="work.img" class="img-fluid rounded-top" alt="..." />
 							</a>
 						</div>
 
