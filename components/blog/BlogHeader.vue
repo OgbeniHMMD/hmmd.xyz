@@ -1,5 +1,5 @@
 <template>
-	<div class="border-bottom shadow-sm">
+	<div class="border-bo ttom shadow">
 		<div class="container p-3 p-md-4 d-flex justify-content-between align-items-center">
 			<div>
 				<a href="/blog">

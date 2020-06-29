@@ -1,11 +1,11 @@
 <template>
 	<section class="d-flex flex-column justify-content-around min-vh-100 border-bottom m-0 my-auto">
 		<div class="p-3 p-md-5">
-			<p class="display-4 pb-5 mb-5 border-primary border-bottom">Frontend web developer</p>
+			<p class="display-4 pb-4 mb-5 border-primary border-bottom">Front-end web developer</p>
 
-			<p class="h2 mb-5">
-				I build web apps usually with the JAMstack.
-				<br />#Javascript #Vue.js #Nuxt.js #bootstrap
+			<p class="h2">
+				I'm a Web developer from Lagos, Nigeria.
+				<br />I build responsive and mobile-first web apps usually with the JAMstack.
 			</p>
 		</div>
 
