@@ -73,7 +73,7 @@
 								<div class="h1">PROFILE</div>
 								<div class="pb-4">
 									<p>
-										I am a freelance &mdash; javascript &mdash; frontend web developer. I build web apps usually with the JAMstack,
+										I am a freelance &mdash; frontend web developer. I build web apps usually with the JAMstack,
 										I.e, Javascript (vanilla JS, ES6, Vue.js), the markup languages and/or frameworks (Html/CSS, Bootstrap), and maybe some Everything-as-a-Service (Xaas) solutions.
 									</p>
 									<p>I have histories with ASP.NET/VB.NET, Java(SE), Python, PHP (Code Igniter, Laravel), Wordpress...</p>
