@@ -2,7 +2,7 @@
 	<section class="container p-2 mb-5">
 		<div
 			:key="article.slug"
-			class="position-relative border-bottom border-primary text-center py-5"
+			class="bg-white position-relative rounded text-center shadow-sm py-5 my-3"
 			v-for="article in articles"
 		>
 			<a :href="'/blog/' + article.slug" class="stretched-link">

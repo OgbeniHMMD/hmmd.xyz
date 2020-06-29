@@ -1,6 +1,6 @@
 <template>
-	<div class="p-5 min-vh-100" style="background-image: url('/patterns/stardust.png')">
-		<div class="container border border-primary">
+	<div class="p-5 min-vh-100">
+		<div class="container border border-primary shadow-sm rounded">
 			<div class="row">
 				<aside class="col-4 bg-primary p-0">
 					<div class="bg-primary text-white border-bottom border-white px-3 py-5">
