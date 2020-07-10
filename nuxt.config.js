@@ -66,7 +66,7 @@ export default {
   ],
   webfontloader: {
     google: {
-      families: ["Changa&display=swap"]
+      families: ["Changa&display=swap", "Righteous"]
     }
   },
   /*

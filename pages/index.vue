@@ -1,13 +1,10 @@
 <template>
-	<div class="row m-0 mw-100">
-		<nav id="header" class="position-lg-fixed bg-light col-12 col-lg-5 col-xl-4 p-0 shadow-sm">
-			<the-header id="top" />
-		</nav>
-		<main class="col-12 col-lg-7 col-xl-8 offset-lg-5 offset-xl-4 p-0">
-			<intro-section id="intro" />
-			<portfolio-section id="portfolio" />
-			<contact-section id="contact" />
-		</main>
+	<div>
+		<the-header id="top" />
+
+		<intro-section id="intro" />
+		<portfolio-section id="portfolio" />
+		<contact-section id="contact" />
 	</div>
 </template>
 

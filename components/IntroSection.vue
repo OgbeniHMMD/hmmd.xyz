@@ -4,7 +4,9 @@
 			<p class="display-4 pb-4 mb-5 border-primary border-bottom">Front-end web developer</p>
 
 			<p class="h2">
-				I'm a Web developer from Lagos, Nigeria.
+				Hey,
+				<br />I'm Hammed,
+				<br />Web developer from Lagos, Nigeria.
 				<br />I build responsive and mobile-first web apps usually with the JAMstack.
 			</p>
 		</div>
@@ -22,3 +24,4 @@
 		</div>
 	</section>
 </template>
+
