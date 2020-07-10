@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  font-family: "Changa", $font-family-sans-serif;
+  font-family: "Quicksand", $font-family-sans-serif;
 
   .header {
     background-image: url("/img/hmmd.svg"),
@@ -12,10 +12,6 @@ body {
 
     background-size: contain, auto;
     background-position: bottom right, top left;
-  }
-
-  .display-4 {
-    // font-family: "Righteous" !important;
   }
 
   .tamper-opacity {
@@ -29,7 +25,9 @@ body {
   }
 }
 
-// Extending bootstrap
+/*
+** Extending bootstrap
+*/
 
 .v-center {
   @extend .d-flex,
@@ -42,4 +40,8 @@ body {
 
 .min-vh-75 {
   min-height: 75vh !important;
+}
+
+.font-righteous {
+  font-family: "Righteous", cursive !important;
 }

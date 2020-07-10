@@ -1,5 +1,6 @@
 export default {
   mode: "universal",
+
   head: {
     title: "OgbeniHMMD" || process.env.npm_package_name,
     meta: [
@@ -12,6 +13,7 @@ export default {
       }
     ]
   },
+
   env: {
     app: {
       name: process.env.npm_package_name,
@@ -26,59 +28,47 @@ export default {
       github: "//github.com.com/OgbeniHMMD"
     }
   },
-  /*
-   ** Customize the progress-bar color
-   */
+
   loading: { color: "#fff" },
-  /*
-   ** Global CSS
-   */
+
   css: [],
-  /*
-   ** Plugins to load before mounting the App
-   */
+
   plugins: [{ src: "~/plugins/disqus", mode: "client" }],
-  /*
-   ** Nuxt.js dev-modules
-   */
-  buildModules: [
-    [
-      "@nuxtjs/google-analytics",
-      {
-        id: "UA-165979019-1"
-      }
-    ]
-  ],
-  /*
-   ** Nuxt.js modules
-   */
+
+  buildModules: ["@nuxtjs/google-analytics"],
+
   modules: [
-    "@nuxtjs/axios",
     "@nuxtjs/pwa",
+    "@nuxtjs/axios",
     "@nuxt/content",
-    "nuxt-webfontloader",
-    [
-      "@nuxtjs/google-adsense",
-      {
-        id: "ca-pub-1901202656329152"
-      }
-    ]
+    "@nuxtjs/google-adsense",
+    "nuxt-webfontloader"
   ],
+
+  googleAdsense: {
+    id: "ca-pub-1901202656329152"
+  },
+
+  googleAnalytics: {
+    id: "UA-165979019-1"
+  },
+
   webfontloader: {
-    google: {
-      families: ["Changa&display=swap", "Righteous"]
+    custom: {
+      families: ["Changa", "Righteous", "Quicksand"],
+      urls: [
+        "https://fonts.googleapis.com/css?family=Changa&display=swap",
+        "https://fonts.googleapis.com/css?family=Righteous&display=swap",
+        "https://fonts.googleapis.com/css?family=Quicksand&display=swap"
+      ]
     }
   },
-  /*
-   ** Build configuration
-   */
+
   build: {
-    /*
-     ** You can extend webpack config here
-     */
     extend(config, ctx) {}
   },
+
   generate: {
-    fallback: true // Use '404.html' instead of the default '200.html'
+    fallback: true // Use '404.html'
   }
 };

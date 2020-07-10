@@ -1,8 +1,7 @@
 <template>
 	<div>
 		<the-header id="top" />
-
-		<intro-section id="intro" />
+		<the-quote id="quote" />
 		<portfolio-section id="portfolio" />
 		<contact-section id="contact" />
 	</div>
@@ -11,14 +10,14 @@
 
 <script>
 import TheHeader from "~/components/TheHeader.vue";
-import IntroSection from "~/components/IntroSection.vue";
+import TheQuote from "~/components/TheQuote.vue";
 import PortfolioSection from "~/components/PortfolioSection.vue";
 import ContactSection from "~/components/ContactSection.vue";
 
 export default {
 	components: {
 		TheHeader,
-		IntroSection,
+		TheQuote,
 		PortfolioSection,
 		ContactSection
 	}
