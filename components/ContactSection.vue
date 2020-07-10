@@ -50,18 +50,18 @@
 				<button
 					type="reset"
 					title="Clear all fields"
-					class="col btn btn-md-lg btn-outline-danger shadow mr-3 mr-md-4"
+					class="col btn btn-md-lg btn-outline-danger shadow mr-3 mr-md-4 font-weight-bold"
 					v-on:click="reset()"
 				>
-					<i class="fa fa-times mr-4" />Reset
+					<i class="fas fa-times mr-4" />Reset
 				</button>
 
 				<button
 					title="Send Message"
 					v-on:click="validateData()"
-					class="btn btn-md-lg btn-outline-primary col shadow"
+					class="btn btn-md-lg btn-outline-primary col shadow font-weight-bold"
 				>
-					<i class="fa fa-envelope-o mr-4"></i>Send
+					<i class="fas fa-envelope mr-4"></i>Send
 				</button>
 			</div>
 		</div>

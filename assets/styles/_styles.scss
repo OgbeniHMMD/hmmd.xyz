@@ -2,26 +2,21 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-  font-family: "Quicksand", $font-family-sans-serif;
+.the-header {
+  background-image: url("/img/hmmd.svg"), url(/patterns/black-thread-light.png);
+  background-repeat: no-repeat, repeat;
 
-  .header {
-    background-image: url("/img/hmmd.svg"),
-      url(/patterns/black-thread-light.png);
-    background-repeat: no-repeat, repeat;
+  background-size: contain, auto;
+  background-position: bottom right, top left;
+}
 
-    background-size: contain, auto;
-    background-position: bottom right, top left;
-  }
+.tamper-opacity {
+  background-color: transparent !important;
 
-  .tamper-opacity {
-    background-color: transparent !important;
-
-    @include media-breakpoint-down(md) {
-      opacity: 0.9;
-      padding: $spacer;
-      background-color: $light !important;
-    }
+  @include media-breakpoint-down(md) {
+    opacity: 0.9;
+    padding: $spacer;
+    background-color: $light !important;
   }
 }
 
@@ -42,6 +37,7 @@ body {
   min-height: 75vh !important;
 }
 
+// Set NAME font
 .font-righteous {
   font-family: "Righteous", cursive !important;
 }

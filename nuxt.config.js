@@ -55,9 +55,8 @@ export default {
 
   webfontloader: {
     custom: {
-      families: ["Changa", "Righteous", "Quicksand"],
+      families: ["Righteous", "Quicksand"],
       urls: [
-        "https://fonts.googleapis.com/css?family=Changa&display=swap",
         "https://fonts.googleapis.com/css?family=Righteous&display=swap",
         "https://fonts.googleapis.com/css?family=Quicksand&display=swap"
       ]
