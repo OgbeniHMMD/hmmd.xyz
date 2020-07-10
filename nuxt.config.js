@@ -11,6 +11,12 @@ export default {
         name: "description",
         content: process.env.npm_package_description || ""
       }
+    ],
+    script: [
+      {
+        src: "https://kit.fontawesome.com/57b5a4abc3.js",
+        crossorigin: "anonymous"
+      }
     ]
   },
 
@@ -41,13 +47,8 @@ export default {
     "@nuxtjs/pwa",
     "@nuxtjs/axios",
     "@nuxt/content",
-    "@nuxtjs/google-adsense",
     "nuxt-webfontloader"
   ],
-
-  googleAdsense: {
-    id: "ca-pub-1901202656329152"
-  },
 
   googleAnalytics: {
     id: "UA-165979019-1"

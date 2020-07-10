@@ -14,7 +14,7 @@ html {
   background-color: transparent !important;
 
   @include media-breakpoint-down(md) {
-    opacity: 0.9;
+    opacity: 0.91;
     padding: $spacer;
     background-color: $light !important;
   }
@@ -37,7 +37,7 @@ html {
   min-height: 75vh !important;
 }
 
-// Set NAME font
+// Set custom font
 .font-righteous {
   font-family: "Righteous", cursive !important;
 }
