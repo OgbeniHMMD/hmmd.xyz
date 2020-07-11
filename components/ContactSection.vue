@@ -1,12 +1,12 @@
 <template>
-	<section class="min-vh-100 bg-light v-center m-0 my-auto p-1">
-		<div class="container bg-white shadow border rounded" :class="'border-'+ alert.type">
-			<div class="px-3 px-md-4 py-5">
+	<section class="jumbotron v-center rounded-0 m-0 my-auto p-0 py-sm-5">
+		<div class="container bg-light shadow border" :class="'border-' + alert.type">
+			<div class="px-3 py-5 p-sm-4 p-lg-5">
 				<div class="row">
 					<div
 						v-if="alert.msg"
 						class="col-12 lead alert shadow-sm"
-						:class="'alert-'+ alert.type"
+						:class="'alert-' + alert.type"
 						v-html="alert.msg"
 					></div>
 					<div v-else class="col-12 h1 p-0 mb-4 alert">Contact Me</div>
@@ -16,7 +16,7 @@
 							id="name"
 							required
 							v-model.trim="name"
-							class="form-control form-control-lg border-0 round ed-0 shadow mb-4"
+							class="form-control form-control-lg border-0 rounded-sm shadow mb-4"
 							placeholder="Your name"
 						/>
 					</div>
@@ -27,7 +27,7 @@
 							required
 							type="email"
 							v-model.trim="email"
-							class="form-control form-control-lg border-0 rounded-sm shadow mb-4"
+							class="form-control form-control-lg border-0 rounded-sm sm shadow mb-4"
 							placeholder="E-mail@Example.com"
 						/>
 					</div>
@@ -47,18 +47,18 @@
 					<button
 						type="reset"
 						title="Clear all fields"
-						class="col-5 btn btn-lg btn-outline-danger shadow mr-3 mr-md-4 font-weight-bold"
+						class="col-5 col-sm-5 btn btn-lg btn-outline-danger shadow rounded-sm mr-md-4"
 						v-on:click="reset()"
 					>
-						<i class="fas fa-times mr-4" />Reset
+						<i class="fas fa-times mr-3 mr-md-4" />Reset
 					</button>
 
 					<button
 						title="Send Message"
 						v-on:click="validateData()"
-						class="col-5 btn btn-lg btn-outline-primary shadow font-weight-bold"
+						class="col-6 col-sm-5 btn btn-lg btn-outline-primary shadow rounded-sm"
 					>
-						<i class="fas fa-envelope mr-4"></i>Send
+						<i class="fas fa-envelope mr-3 mr-md-4"></i>Send
 					</button>
 				</div>
 			</div>
