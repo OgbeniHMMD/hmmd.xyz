@@ -9,15 +9,15 @@
 
 
 <script>
-import TheHeader from "~/components/TheHeader.vue";
-import TheQuote from "~/components/TheQuote.vue";
+import HeaderSection from "~/components/HeaderSection.vue";
+import QuoteSection from "~/components/QuoteSection.vue";
 import PortfolioSection from "~/components/PortfolioSection.vue";
 import ContactSection from "~/components/ContactSection.vue";
 
 export default {
 	components: {
-		TheHeader,
-		TheQuote,
+		HeaderSection,
+		QuoteSection,
 		PortfolioSection,
 		ContactSection
 	}

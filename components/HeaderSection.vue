@@ -1,6 +1,6 @@
 <template>
-	<div class="bg-white p-2 p-md-3 p-xl-4">
-		<header class="the-header bg-light container-fluid border flex-grow-1 shadow rounded p-0">
+	<header class="bg-white p-2 p-md-3 p-xl-4">
+		<div class="the-header bg-light container-fluid border flex-grow-1 shadow rounded p-0">
 			<div
 				class="d-flex flex-column justify-content-between justify-content-md-center col-12 col-lg-10 col-xl-9 p-0 px-xl-4"
 			>
@@ -22,6 +22,6 @@
 					</div>
 				</div>
 			</div>
-		</header>
-	</div>
+		</div>
+	</header>
 </template>

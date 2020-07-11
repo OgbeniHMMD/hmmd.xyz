@@ -1,6 +1,6 @@
 <template>
 	<section class="border-bottom">
-		<section class="container-fluid p-3 p-md-4 p-lg-5">
+		<div class="container-fluid p-3 p-md-4 p-lg-5">
 			<div class="mb-3">
 				<span class="h1 mb-0">Recent works</span>
 				<span class="font-weight-bold ml-4">
@@ -30,7 +30,7 @@
 					</div>
 				</div>
 			</div>
-		</section>
+		</div>
 	</section>
 </template>
 
