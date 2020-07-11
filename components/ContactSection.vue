@@ -1,7 +1,7 @@
 <template>
-	<section class="min-vh-100 bg-light v-center shadow m-0 my-auto">
-		<div class="container bg-white shadow border rounded">
-			<div class="p-3 p-md-4">
+	<section class="min-vh-100 bg-light v-center m-0 my-auto p-1">
+		<div class="container bg-white shadow border rounded" :class="'border-'+ alert.type">
+			<div class="px-3 px-md-4 py-5">
 				<div class="row">
 					<div
 						v-if="alert.msg"
@@ -47,7 +47,7 @@
 					<button
 						type="reset"
 						title="Clear all fields"
-						class="col-5 btn btn-lg btn-outline-danger shadow mr-3 mr-md-4 font-weight-bold px-5"
+						class="col-5 btn btn-lg btn-outline-danger shadow mr-3 mr-md-4 font-weight-bold"
 						v-on:click="reset()"
 					>
 						<i class="fas fa-times mr-4" />Reset
@@ -56,7 +56,7 @@
 					<button
 						title="Send Message"
 						v-on:click="validateData()"
-						class="col-5 btn btn-lg btn-outline-primary shadow font-weight-bold px-5"
+						class="col-5 btn btn-lg btn-outline-primary shadow font-weight-bold"
 					>
 						<i class="fas fa-envelope mr-4"></i>Send
 					</button>
