@@ -1,7 +1,7 @@
 <template>
 	<div>
-		<the-header id="top" />
-		<the-quote id="quote" />
+		<header-section id="top" />
+		<quote-section id="quote" />
 		<portfolio-section id="portfolio" />
 		<contact-section id="contact" />
 	</div>
