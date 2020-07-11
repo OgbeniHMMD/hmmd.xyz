@@ -41,7 +41,7 @@ export default {
 
   plugins: [{ src: "~/plugins/disqus", mode: "client" }],
 
-  buildModules: ["@nuxtjs/google-analytics"],
+  buildModules: ["@nuxtjs/google-analytics", "nuxt-purgecss"],
 
   modules: [
     "@nuxtjs/pwa",
@@ -52,6 +52,10 @@ export default {
 
   googleAnalytics: {
     id: "UA-165979019-1"
+  },
+
+  purgeCSS: {
+    // your settings here
   },
 
   webfontloader: {
