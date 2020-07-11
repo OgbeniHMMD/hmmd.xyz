@@ -1,5 +1,11 @@
 html {
   scroll-behavior: smooth;
+
+  // Change text selection background color
+  ::selection {
+    @extend .text-white;
+    @extend .bg-primary;
+  }
 }
 
 .the-header {
