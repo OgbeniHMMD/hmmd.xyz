@@ -1,68 +1,66 @@
 <template>
-	<section class="d-flex justify-content-center align-items-center min-vh-100 m-0 my-auto">
-		<div class="container p-4 p-md-5">
-			<div class="row">
-				<div
-					v-if="alert.msg"
-					class="col-12 lead alert shadow-sm"
-					:class="'alert-'+ alert.type"
-					v-html="alert.msg"
-				></div>
-				<div v-else class="col-12 h1 p-0 mb-4">Contact Me</div>
+	<section class="min-vh-100 bg-light v-center shadow m-0 my-auto">
+		<div class="container bg-white shadow border rounded">
+			<div class="p-3 p-md-4">
+				<div class="row">
+					<div
+						v-if="alert.msg"
+						class="col-12 lead alert shadow-sm"
+						:class="'alert-'+ alert.type"
+						v-html="alert.msg"
+					></div>
+					<div v-else class="col-12 h1 p-0 mb-4 alert">Contact Me</div>
 
-				<div class="col-12 col-md-6 p-0">
-					<input
-						id="name"
-						required
-						v-model.trim="name"
-						class="form-control form-control-lg border-0 round ed-0 shadow mb-4"
-						placeholder="Your name"
-					/>
+					<div class="col-12 col-md-6 p-0">
+						<input
+							id="name"
+							required
+							v-model.trim="name"
+							class="form-control form-control-lg border-0 round ed-0 shadow mb-4"
+							placeholder="Your name"
+						/>
+					</div>
+
+					<div class="col-12 col-md-6 p-0 pl-md-3">
+						<input
+							id="email"
+							required
+							type="email"
+							v-model.trim="email"
+							class="form-control form-control-lg border-0 rounded-sm shadow mb-4"
+							placeholder="E-mail@Example.com"
+						/>
+					</div>
+
+					<div class="col-12 p-0">
+						<textarea
+							rows="4"
+							required
+							v-model.trim="textArea"
+							placeholder="Your Message..."
+							class="form-control form-control-lg border-0 shadow mb-4"
+						></textarea>
+					</div>
 				</div>
 
-				<div class="col-12 col-md-6 p-0 pl-md-3">
-					<input
-						id="email"
-						required
-						type="email"
-						v-model.trim="email"
-						class="form-control form-control-lg border-0 rounded-sm shadow mb-4"
-						placeholder="E-mail@Example.com"
-					/>
+				<div class="row justify-content-between">
+					<button
+						type="reset"
+						title="Clear all fields"
+						class="col-5 btn btn-lg btn-outline-danger shadow mr-3 mr-md-4 font-weight-bold px-5"
+						v-on:click="reset()"
+					>
+						<i class="fas fa-times mr-4" />Reset
+					</button>
+
+					<button
+						title="Send Message"
+						v-on:click="validateData()"
+						class="col-5 btn btn-lg btn-outline-primary shadow font-weight-bold px-5"
+					>
+						<i class="fas fa-envelope mr-4"></i>Send
+					</button>
 				</div>
-
-				<div class="col-12 p-0">
-					<textarea
-						rows="4"
-						required
-						v-model.trim="textArea"
-						placeholder="Your Message..."
-						class="form-control form-control-lg border-0 shadow mb-4"
-					></textarea>
-				</div>
-			</div>
-
-			<div class="row">
-				<a class="col-3 h1 text-center text-dark" href="#" title="Jump Up">
-					<i class="fa fa-chevron-circle-up bounce"></i>
-				</a>
-
-				<button
-					type="reset"
-					title="Clear all fields"
-					class="col btn btn-md-lg btn-outline-danger shadow mr-3 mr-md-4 font-weight-bold"
-					v-on:click="reset()"
-				>
-					<i class="fas fa-times mr-4" />Reset
-				</button>
-
-				<button
-					title="Send Message"
-					v-on:click="validateData()"
-					class="btn btn-md-lg btn-outline-primary col shadow font-weight-bold"
-				>
-					<i class="fas fa-envelope mr-4"></i>Send
-				</button>
 			</div>
 		</div>
 	</section>
