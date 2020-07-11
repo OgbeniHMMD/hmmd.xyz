@@ -2,14 +2,14 @@
   {
     "title": "Laspostress",
     "url": "http://laspostress.hmmd.xyz",
-    "img": "/img/laspostress.jpg",
+    "img": "/img/works/laspostress.jpg",
     "github": "http://github.com/OgbeniHMMD/laspostress",
     "description": "A redesign of the LASPOTECH's website"
   },
   {
     "title": "Radio Lagos — 104.7 FM",
     "url": "http://radiolagos.hmmd.xyz",
-    "img": "/img/radio-lagos.jpg",
+    "img": "/img/works/radio-lagos.jpg",
     "github": "http://github.com/OgbeniHMMD/radio-lagos",
     "description": "Internet Radio player for Radio Lagos — 107.5 FM"
   },
