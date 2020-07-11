@@ -1,39 +1,33 @@
 <template>
-	<section class="min-vh-100 border-bottom m-0 my-auto">
-		<section class="container">
-			<div class="p-3 p-md-5 lead">
-				<div class="h1 mb-3">Recent works</div>
+	<section class="border-bottom">
+		<section class="container-fluid p-3 p-md-4 p-lg-5">
+			<div class="mb-3">
+				<span class="h1 mb-0">Recent works</span>
+				<span class="font-weight-bold ml-4">
+					&raquo;
+					<a class="ml-2" href="https://github.com/OgbeniHMMD">Github</a>
+				</span>
+			</div>
 
-				<div class="row mb-4">
-					<div v-for="(work, index) in works" v-bind:key="index" class="col-12 col-sm-6 p-0">
-						<div class="shadow-sm rounded-sm m-3">
-							<div class="text-center">
-								<a :href="work.url">
-									<img :src="work.img" class="img-fluid rounded-top" alt="..." />
-								</a>
-							</div>
+			<div class="row mb-4">
+				<div v-for="(work, index) in works" v-bind:key="index" class="col-12 col-sm-6 col-lg-4 p-0">
+					<div class="shadow-sm rounded-sm m-3">
+						<div class="text-center">
+							<a :href="work.url">
+								<img :src="work.img" class="img-fluid rounded-top w-100" alt="..." />
+							</a>
+						</div>
 
-							<div class="p-1">
-								<div class="d-flex justify-content-between align-items-center">
-									<a :href="work.url">{{ work.title }}</a>
-									<a title="Github" class="p-1" :href="work.github">
-										<i class="fab fa-github"></i>
-									</a>
-								</div>
-							</div>
+						<div class="text-center text-muted lead p-3">{{ work.description }}</div>
+						<div class="d-flex justify-content-between align-items-center" style="font-size: 1.5rem">
+							<a title="Github" class="px-2" :href="work.github">
+								<i class="fab fa-github"></i>
+							</a>
+							<a class="px-2" title="Live demo" :href="work.url">
+								<i class="fas fa-external-link-alt"></i>
+							</a>
 						</div>
 					</div>
-				</div>
-
-				<div class="text-center">
-					<a
-						title="Continue browsing on Github"
-						href="https://github.com/OgbeniHmmd"
-						class="btn btn-outline-primary shadow-sm btn-lg px-5"
-					>
-						Continue browsing
-						<i class="fas fa-chevron-right ml-3"></i>
-					</a>
 				</div>
 			</div>
 		</section>
