@@ -1,5 +1,6 @@
 export default {
   mode: "universal",
+  target: "static",
 
   head: {
     title: "OgbeniHMMD" || process.env.npm_package_name,
@@ -28,10 +29,6 @@ export default {
     blog: {
       name: "OgbeniHMMD's Blog",
       slogan: process.env.npm_package_description
-    },
-    links: {
-      twitter: "//twitter.com/OgbeniHMMD",
-      github: "//github.com.com/OgbeniHMMD"
     }
   },
 
@@ -52,10 +49,6 @@ export default {
 
   googleAnalytics: {
     id: "UA-165979019-1"
-  },
-
-  purgeCSS: {
-    // your settings here
   },
 
   webfontloader: {
