@@ -1,30 +1,30 @@
 [
   {
     "title": "Laspostress",
-    "url": "http://laspostress.hmmd.xyz",
+    "url": "https://laspostress.hmmd.xyz",
     "img": "/img/works/laspostress.jpg",
-    "github": "http://github.com/OgbeniHMMD/laspostress",
+    "github": "https://github.com/OgbeniHMMD/laspostress",
     "description": "A redesign of the LASPOTECH's website"
   },
   {
     "title": "Radio Lagos — 104.7 FM",
-    "url": "http://radiolagos.hmmd.xyz",
+    "url": "https://radiolagos.hmmd.xyz",
     "img": "/img/works/radio-lagos.jpg",
-    "github": "http://github.com/OgbeniHMMD/radio-lagos",
+    "github": "https://github.com/OgbeniHMMD/radio-lagos",
     "description": "Internet Radio player for Radio Lagos — 107.5 FM"
   },
   {
     "title": "Remember.i.ng",
-    "url": "http://remember.hmmd.xyz",
+    "url": "https://remember.hmmd.xyz",
     "img": "/thumb.jpg",
-    "github": "http://github.com/OgbeniHMMD/remember.i.ng",
+    "github": "https://github.com/OgbeniHMMD/remember.i.ng",
     "description": "Remember.i.ng — My collections of tributes"
   },
   {
     "title": "blog.hmmd.xyz",
-    "url": "http://blog.hmmd.xyz",
+    "url": "https://blog.hmmd.xyz",
     "img": "/thumb.jpg",
-    "github": "http://github.com/OgbeniHMMD/blog.hmmd.xyz",
+    "github": "https://github.com/OgbeniHMMD/blog.hmmd.xyz",
     "description": "My blog"
   }
 ]
