@@ -8,6 +8,8 @@
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
+    "export": "nuxt export",
+    "serve": "nuxt serve",
     "generate": "nuxt build && nuxt export",
     "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
   },
