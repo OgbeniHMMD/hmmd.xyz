@@ -25,19 +25,10 @@ export default {
     app: {
       name: process.env.npm_package_name,
       slogan: process.env.npm_package_description
-    },
-    blog: {
-      name: "OgbeniHMMD's Blog",
-      slogan: process.env.npm_package_description
     }
   },
 
   loading: { color: "#fff" },
-
-  css: [],
-
-  plugins: [{ src: "~/plugins/disqus", mode: "client" }],
-
   buildModules: ["@nuxtjs/google-analytics", "nuxt-purgecss"],
 
   modules: [
