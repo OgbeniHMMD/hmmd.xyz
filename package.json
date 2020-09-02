@@ -1,6 +1,6 @@
 {
   "name": "hmmd.xyz",
-  "version": "0.2.7",
+  "version": "0.2.8",
   "description": "Olajide A. Hammed – OgbeniHMMD",
   "author": "Olajide A. Hammed",
   "private": true,
@@ -8,19 +8,16 @@
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "export": "nuxt export",
-    "serve": "nuxt serve",
-    "generate": "nuxt build && nuxt export",
-    "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
+    "generate": "nuxt generate",
+    "deploy": "push-dir --dir=dist --branch=netlify-build --cleanup"
   },
   "dependencies": {
     "@nuxt/content": "^1.2.0",
     "@nuxtjs/axios": "^5.10.3",
     "@nuxtjs/pwa": "^3.0.0-0",
-    "nuxt": "latest"
+    "nuxt": "^2.14.4"
   },
   "devDependencies": {
-    "@nuxtjs/google-analytics": "^2.3.0",
     "bootstrap": "^4.5.0",
     "node-sass": "^4.14.1",
     "nuxt-purgecss": "^1.0.0",

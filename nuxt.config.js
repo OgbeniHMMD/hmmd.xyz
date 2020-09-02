@@ -3,10 +3,15 @@ export default {
   target: "static",
 
   head: {
-    title: "OgbeniHMMD" || process.env.npm_package_name,
+    titleTemplate: "%s - " + "hmmd.xyz",
+    title: "OgbeniHMMD",
     meta: [
       { charset: "utf-8" },
-      { name: "viewport", content: "width=device-width, initial-scale=1" },
+      {
+        name: "viewport",
+        content:
+          "width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"
+      },
       {
         hid: "description",
         name: "description",
@@ -29,7 +34,7 @@ export default {
   },
 
   loading: { color: "#fff" },
-  buildModules: ["@nuxtjs/google-analytics", "nuxt-purgecss"],
+  buildModules: ["nuxt-purgecss"],
 
   modules: [
     "@nuxtjs/pwa",
@@ -37,10 +42,6 @@ export default {
     "@nuxt/content",
     "nuxt-webfontloader"
   ],
-
-  googleAnalytics: {
-    id: "UA-165979019-1"
-  },
 
   webfontloader: {
     custom: {
