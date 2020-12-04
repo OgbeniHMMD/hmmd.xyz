@@ -7,6 +7,13 @@
     "description": "A redesign of the LASPOTECH's website"
   },
   {
+    "title": "Coinatik",
+    "url": "https://coinatik.hmmd.xyz",
+    "img": "/img/works/coinatik.jpg",
+    "github": "https://github.com/OgbeniHMMD/coinatik",
+    "description": "The World’s Leading peer-to-peer Trading Platform"
+  },
+  {
     "title": "Radio Lagos — 104.7 FM",
     "url": "https://radiolagos.hmmd.xyz",
     "img": "/img/works/radio-lagos.jpg",
@@ -16,7 +23,7 @@
   {
     "title": "blog.hmmd.xyz",
     "url": "https://blog.hmmd.xyz",
-    "img": "/thumb.jpg",
+    "img": "/img/works/my-blog.jpg",
     "github": "https://github.com/OgbeniHMMD/blog.hmmd.xyz",
     "description": "My blog"
   }
