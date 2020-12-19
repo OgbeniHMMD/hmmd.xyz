@@ -1,11 +1,12 @@
 <template>
   <section>
     <header class="h2">PROFILE</header>
-    <article class="pb-4">
+    <article>
       <p>
-        I enjoy building well detailed web apps usually with the JAMstack, I.e,
-        Javascript (vanilla JS, ES6, Vue.js, React.js), the markup languages
-        and/or frameworks (Html/CSS, Bootstrap, Vuetify, TailwindCSS), and some
+        I enjoy building well detailed, state-of-the-art, easy to use,
+        user-friendly websites and applications usually with the JAMstack. I.e,
+        Javascript (Vanilla JS, Vue.js, React.js), the markup languages and/or
+        the CSS frameworks (Bootstrap, Vuetify, TailwindCSS), and some
         Everything-as-a-Service (Xaas) solutions.
       </p>
       <p>
@@ -16,7 +17,6 @@
         I don't crumble under pressure, and I'm ever willing to learn new
         technologies.
       </p>
-      <p>I'm looking for the role of a web developer.</p>
     </article>
   </section>
 </template>
