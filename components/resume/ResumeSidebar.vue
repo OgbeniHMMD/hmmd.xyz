@@ -53,11 +53,12 @@
     <div class="bg-primary text-white px-4 py-5 mb-5">
       <div class="h1 mb-4"><i class="fas fa-tools mr-3"></i> SKILLS</div>
       <div class="py-3"><i class="fas fa-code mr-3"></i> HTML5 / CSS3</div>
-      <div class="py-3"><i class="fab fa-css3 mr-3"></i> SCSS & PostCSS</div>
+      <div class="py-3"><i class="fab fa-css3 mr-3"></i> SCSS / PostCSS</div>
       <div class="py-3"><i class="fab fa-js-square mr-3"></i> Javascript</div>
-      <div class="py-3"><i class="fab fa-vuejs mr-3"></i> Vue.js / Nuxt</div>
+      <div class="py-3"><i class="fab fa-js-square mr-3"></i> Typescript</div>
+      <div class="py-3"><i class="fab fa-vuejs mr-3"></i> Vue.js / Nuxt.js</div>
       <div class="py-3">
-        <i class="fab fa-react mr-3"></i> React.js / Gastby
+        <i class="fab fa-react mr-3"></i> React.js / Gastby / Next.js
       </div>
       <div class="py-3"><i class="fab fa-git mr-3"></i> Git / Github</div>
       <div class="py-3"><i class="fab fa-linux mr-3"></i> Linux / CLI</div>
