@@ -5,7 +5,7 @@
       <div class="font-weight-bold">
         HIGHER NATIONAL DIPLOMA &mdash; Computer Science
       </div>
-      <div>Lagos State Polytechnic, [in view 2021]</div>
+      <div>Lagos State Polytechnic, s</div>
     </div>
 
     <div class="pb-4">
@@ -15,13 +15,6 @@
       <div>
         Lagos State Polytechnic,
         <time>2015</time>
-      </div>
-    </div>
-
-    <div class="pb-4">
-      <div class="font-weight-bold">
-        SSCE &mdash;
-        <time>2010</time>
       </div>
     </div>
   </section>
