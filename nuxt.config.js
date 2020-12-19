@@ -1,7 +1,14 @@
 export default {
-  mode: "universal",
+  // Disable server-side rendering (https://go.nuxtjs.dev/ssr-mode)
+  ssr: false,
+
+  // Target (https://go.nuxtjs.dev/config-target)
   target: "static",
 
+  // Auto import components (https://go.nuxtjs.dev/config-components)
+  components: true,
+
+  // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
     titleTemplate: "%s - " + "hmmd.xyz",
     title: "OgbeniHMMD",
@@ -18,6 +25,7 @@ export default {
         content: process.env.npm_package_description || ""
       }
     ],
+
     script: [
       {
         src: "https://kit.fontawesome.com/57b5a4abc3.js",
@@ -53,6 +61,7 @@ export default {
     }
   },
 
+  // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
     extend(config, ctx) {}
   },
