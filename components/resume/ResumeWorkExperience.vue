@@ -48,7 +48,7 @@
           <div>
             <i class="fas fa-tasks mr-2"></i>
           </div>
-          <div>Managing and Supervising the Frontend Interns</div>
+          <div>Training and Supervising the Frontend Interns</div>
         </div>
       </div>
     </article>
